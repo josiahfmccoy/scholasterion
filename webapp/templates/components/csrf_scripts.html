@@ -1,0 +1,56 @@
+
+{% if current_user and current_user.is_authenticated %}
+
+<script type="text/javascript">
+var checkCSRF = (function() {
+    var globalCSRF = undefined;
+
+    function check(formData) {
+        var data = new FormData();
+        data.set('csrf_token', formData.get('csrf_token') || globalCSRF);
+
+        var reset = $.Deferred();
+        var check = $.ajax({
+            url: "{{ url_for('auth.check_token') }}",
+            type: 'POST',
+            data: data,
+            contentType: false,
+            processData: false
+        })
+        .done(function() {
+            reset.resolve();
+        })
+        .fail(function() {
+            $.ajax({
+                url: "{{ url_for('auth.get_token') }}",
+                type: 'GET',
+                contentType: false,
+                processData: false
+            }).done(function(data) {
+                globalCSRF = data.token;
+                formData.set('csrf_token', globalCSRF);
+                $.ajaxSetup({
+                    beforeSend: function(xhr, settings) {
+                        if (
+                            !/^(GET|HEAD|OPTIONS|TRACE)$/i.test(settings.type)
+                            && !this.crossDomain
+                        ) {
+                            xhr.setRequestHeader("X-CSRFToken", globalCSRF);
+                        }
+                    }
+                });
+                reset.resolve();
+            }).fail(function() {
+                reset.resolve();
+            });
+        });
+
+        return reset.promise();
+    }
+
+    return check;
+})();
+
+</script>
+
+{% endif %}

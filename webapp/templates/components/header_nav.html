@@ -1,0 +1,36 @@
+{% from 'macros/nav_macros.html' import render_nav_home,
+                                        render_nav_item,
+                                        render_nav_toggle %}
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        {{ render_nav_home(site_name) }}
+
+        {{ render_nav_toggle() }}
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                {% if current_user and current_user.is_authenticated %}
+                    {{ render_nav_item(
+                        'Projects',
+                        url_for('projects.index')
+                    ) }}
+                    {{ render_nav_item(
+                        'Term Ontology',
+                        url_for('ontologies.index')
+                    ) }}
+                    {{ render_nav_item(
+                        'Utilities', url_for('projects.utilities')
+                    ) }}
+                {% endif %}
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                {# if current_user and current_user.is_authenticated %}
+                    {{ render_nav_item('Logout', url_for('security.logout')) }}
+                {% else %}
+                    {{ render_nav_item('Login', url_for('security.login')) }}
+                {% endif #}
+            </ul>
+        </div>
+    </div>
+</nav>

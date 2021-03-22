@@ -1,0 +1,87 @@
+<div id="loading-screen" class="modal show"
+    data-bs-backdrop="static" aria-modal="true" style="display: block;"
+>
+    <div class="modal-dialog modal-dialog-centered" style="width: 6rem;">
+        <div class="modal-content spinner-border text-primary" role="status"
+            style="background: transparent; width: 6rem; height: 6rem; border-width: 0.75em;"
+        >
+            <span class="sr-only">Loading ...</span>
+        </div>
+    </div>
+</div>
+<div class="modal-backdrop show" style="opacity: 0.25;"></div>
+
+<script>
+    document.body.classList.add('modal-open');
+    const Loader = (function(ls) {
+        const loader = $('#loading-screen');
+
+        let loadingRequests = [];
+        let allowHide = true;
+
+        // Show the loading element
+        const showLoader = (loader) => {
+            if (!loadingRequests.length) {
+                return false;
+            }
+
+            if (document.readyState === 'complete') {
+                $('.modal-backdrop.show').remove(); // There can only be one
+
+                loader.modal('show');
+                // Make sure the loader shows for at least .5 seconds
+                allowHide = false;
+                setTimeout(() => { allowHide = true; }, 500);
+            }
+            else {
+                setTimeout(() => { showLoader(loader); }, 200);
+            }
+            $('.modal-backdrop.show').css('opacity', 0.25);
+            return true;
+        };
+        // Hide the loading element
+        const hideLoader = (loader) => {
+            if (loadingRequests.length) {
+                return false;
+            }
+
+            if (allowHide && document.readyState === 'complete') {
+                loader.modal('show'); // Just to be safe
+                loader.modal('hide');
+                if (!$('.modal.show').length) {
+                    $('.modal-backdrop.show').remove(); // Just to make sure ...
+                }
+            }
+            else {
+                setTimeout(() => { hideLoader(loader); }, 200);
+            }
+            return true;
+        };
+
+        ls.show = (reason) => {
+            // Log an active loading request
+            loadingRequests.push(reason || 1);
+            // Ask the loader to show if appropriate
+            return showLoader(loader);
+        };
+
+        ls.hide = (reason) => {
+            // Clear the loading request that was made for this reason
+            const i = loadingRequests.indexOf(reason || 1);
+            if (i !== -1) {
+                loadingRequests.splice(i, 1);
+            }
+            // Ask the loader to hide if appropriate
+            return hideLoader(loader);
+        };
+
+        ls.resetUnsafe = () => {
+            // Invalidate all current loading requests
+            loadingRequests = [];
+            // Ask the loader to hide
+            return hideLoader(loader);
+        };
+
+        return ls;
+    })(window.Loader || {});
+</script>

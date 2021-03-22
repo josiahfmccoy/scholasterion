@@ -1,0 +1,20 @@
+
+{% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+        {% for category, message in messages %}
+            {% set category = "info" if category == "message" else category %}
+            <div class="toast fade show align-items-center text-white bg-{{ category }} border-0"
+                role="alert" aria-live="assertive" aria-atomic="true"
+            >
+                <div class="d-flex">
+                    <div class="toast-body">
+                        {{ message }}
+                    </div>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto"
+                        data-bs-dismiss="toast" aria-label="Close"
+                    ></button>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+{% endwith %}

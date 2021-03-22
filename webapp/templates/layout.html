@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="description" content="{{ site_name }}">
+    <link rel="shortcut icon"
+        href="{{ url_for('static', filename='favicon.ico') }}">
+
+    <title>
+        {% if title %}
+            {{ title }} | {{ site_name }}
+        {% else %}
+            {{ site_name }}
+        {% endif %}
+    </title>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" 
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet"
+        href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css"
+        crossorigin="anonymous"
+    >
+</head>
+
+<body>
+    {% include 'components/header.html' %}
+
+    <div id="root">
+        {% block banner %}{% endblock %}
+
+        <div class="container">
+            {% block page_header %}
+                <h2 class="text-secondary mt-4 mb-3">
+                    {{ title }}
+                </h2>
+            {% endblock %}
+
+            {% block content %}{% endblock %}
+        </div>
+
+    </div>
+
+    {% include 'components/footer.html' %}
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"
+        crossorigin="anonymous">
+    </script>
+
+    {{ moment.include_moment() }}
+
+    {% include 'components/csrf_scripts.html' %}
+
+    <script src="{{url_for('static', filename='js/main.js')}}">
+    </script>
+
+    {% block scripts %}{% endblock %}
+
+    {% block modals %}{% endblock %}
+
+    {% include 'components/loader.html' %}
+
+    <div aria-live="polite" aria-atomic="true" class="fixed-bottom" style="z-index: 9999;">
+         <div class="toast-container float-end p-3">
+            {% include 'components/flashed_messages.html' %}
+         </div>
+    </div>
+    <script src="{{url_for('static', filename='js/alerts.js')}}">
+    </script>
+
+</body>
+</html>

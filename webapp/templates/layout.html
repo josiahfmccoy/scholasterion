@@ -32,7 +32,7 @@
     >
 </head>
 
-<body>
+<body class="bg-light">
     {% include 'components/header.html' %}
 
     <div id="root">
@@ -80,7 +80,7 @@
 
     {% include 'components/loader.html' %}
 
-    <div aria-live="polite" aria-atomic="true" class="fixed-bottom" style="z-index: 9999;">
+    <div aria-live="polite" aria-atomic="true" class="fixed-bottom" style="z-index: 9999; pointer-events: none;">
          <div class="toast-container float-end p-3">
             {% include 'components/flashed_messages.html' %}
          </div>

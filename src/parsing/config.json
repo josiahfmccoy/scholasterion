@@ -1,0 +1,79 @@
+{
+    "categories": {
+        "person": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "first": "1",
+            "second": "2",
+            "third": "3",
+            "1st": "1",
+            "2nd": "2",
+            "3rd": "3"
+        },
+        "number": {
+            "singular": "singular",
+            "plural": "plural",
+            "dual": "dual"
+        },
+        "case": {
+            "nominative": "nominative",
+            "accusative": "accusative",
+            "dative": "dative",
+            "ablative": "ablative",
+            "genitive": "genitive",
+            "vocative": "vocative"
+        },
+        "gender": {
+            "masculine": "masculine",
+            "feminine": "feminine",
+            "neuter": "neuter",
+            "common": "common"
+        },
+        "tense": {
+            "present": "present",
+            "perfect": "perfect",
+            "pluperfect": "pluperfect",
+            "future": "future",
+            "aorist": "aorist",
+            "imperfect": "imperfect"
+        },
+        "mood": {
+            "indicative": "indicative",
+            "subjunctive": "subjunctive",
+            "optative": "optative",
+            "imperative": "imperative"
+        },
+        "voice": {
+            "active": "active",
+            "middle": "middle",
+            "passive": "passive",
+            "middle-passive": "middle",
+            "deponent": "middle"
+        }
+    },
+    "parts_of_speech": {
+        "Proper-name noun": "noun (proper)",
+        "noun": "noun",
+
+        "verb": "verb",
+        "participle": "participle",
+        "infinitive": "infinitive",
+
+        "adjective": "adjective",
+        "numeral": "numeral",
+        "adverb": "adverb",
+
+        "pronoun": "pronoun",
+        "relative pronoun": "pronoun (relative)",
+        "interrogative pronoun": "pronoun (interrogative)",
+
+        "preposition": "prepositon",
+
+        "definite article": "article (definite)",
+
+        "conjunction": "conjunction",
+
+        "interjection": "interjection"
+    }
+}

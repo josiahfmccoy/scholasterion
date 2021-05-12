@@ -10,11 +10,7 @@ base_api = api.Blueprint('base_api', __name__)
 def load_texts():
     t = []
 
-    text_folder = os.path.join(
-        os.path.dirname(os.path.abspath(__file__)),
-        '../../src/texts'
-    )
-    for fname in os.listdir(text_folder):
+    for fname in os.listdir(current_app.static_path('data')):
         if not fname.endswith('.xml'):
             continue
         fname = fname.rsplit('.', 1)[0]

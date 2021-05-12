@@ -1,9 +1,10 @@
 <section class="sc-level-1">
-  <h1>
+  <h1 style="text-align: center;">
     <span class="word">
       <span class="word-form">ΔΙΑΤΑΓΑΙ</span>
       <span class="lemma">διαταγή</span>
     </span>
+    <br/>
     <span class="word">
       <span class="word-form">ΤΩΝ</span>
       <span class="lemma">ὁ</span>
@@ -27,40 +28,1009 @@
       <span class="word-form">ΚΛΗΜΕΝΤΟΣ</span>
       <span class="lemma">Κλήμης</span>
     </span>
+    <br/>
+    <span class="word">
+      <span class="word-form">ΤΟΥ</span>
+      <span class="lemma">τις</span>
+    </span>
+    <span class="word">
+      <span class="word-form">ΡΩΜΑΙΩΝ</span>
+      <span class="lemma">ρωμαιων</span>
+    </span>
+    <span class="word">
+      <span class="word-form">ΕΠΙΣΚΟΠΟΥ</span>
+      <span class="lemma">επισκοπου</span>
+    </span>
+    <span class="word">
+      <span class="word-form">ΤΕ</span>
+      <span class="lemma">τε</span>
+    </span>
+    <span class="word">
+      <span class="word-form">ΚΑΙ</span>
+      <span class="lemma">ἄν</span>
+    </span>
+    <span class="word">
+      <span class="word-form">ΠΟΛΙΤΟΥ</span>
+      <span class="lemma">πολίτης</span>
+    </span>
+    <br/>
+    <span class="word">
+      <span class="word-form">Η</span>
+      <span class="lemma">η</span>
+    </span>
+    <br/>
+    <span class="word">
+      <span class="word-form">ΚΑΘΟΛΙΚΗ</span>
+      <span class="lemma">καθολικός</span>
+    </span>
+    <span class="word">
+      <span class="word-form">ΔΙΔΑΣΚΑΛΙΑ.</span>
+      <span class="lemma">διδασκάλιον</span>
+    </span>
   </h1>
-  <h2>
+  <section class="sc-level-2">
+    <h4>
+      <span class="word">
+        <span class="word-form">ΚΕΦΑΛΑΙΑ</span>
+        <span class="lemma">κεφάλαιος</span>
+        <span class="lemma">κεφάλαιον</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ΤΟΥ</span>
+        <span class="lemma">τις</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ΠΡΩΤΟΥ</span>
+        <span class="lemma">πρωτογενής</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ΒΙΒΛΙΟΥ</span>
+        <span class="lemma">βιβλίον</span>
+      </span>
+    </h4>
+    <ul style="list-style-type: none;">
+      <li>
+        <a href="#chapter-1">
+          <span class="word">
+            <span class="word-form">αʹ.</span>
+            <span class="lemma">αʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">πλεονεξίας.</span>
+            <span class="lemma">πλεονεξία</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-2">
+          <span class="word">
+            <span class="word-form">βʹ.</span>
+            <span class="lemma">βʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τοῦ</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">τίς</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">μὴ</span>
+            <span class="lemma">μή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀνθυβρίζειν</span>
+            <span class="lemma">ἀνθυβρίζω</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἢ</span>
+            <span class="lemma">ἤ</span>
+            <span class="lemma">τίη</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀμύνασθαι</span>
+            <span class="lemma">ἀμύνω</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τὸν</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀδικοῦντα.</span>
+            <span class="lemma">ἀδικέω</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-3">
+          <span class="word">
+            <span class="word-form">γʹ.</span>
+            <span class="lemma">γʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καλλωπισμοῦ</span>
+            <span class="lemma">καλλωπισμός</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καὶ</span>
+            <span class="lemma">καί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τῆς</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἐκεῖθεν</span>
+            <span class="lemma">ἐκεῖθεν</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἁμαρτίας.</span>
+            <span class="lemma">ἁμαρτία</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-4">
+          <span class="word">
+            <span class="word-form">δʹ.</span>
+            <span class="lemma">δʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Ὅτι</span>
+            <span class="lemma">ὅτι</span>
+            <span class="lemma">ὅστις</span>
+          </span>
+          <span class="word">
+            <span class="word-form">οὐ</span>
+            <span class="lemma">οὐ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">δεῖ</span>
+            <span class="lemma">δέω</span>
+            <span class="lemma">δεῖ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">περιεργάζεσθαι</span>
+            <span class="lemma">περιεργάζομαι</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τοὺς</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">κακῶς</span>
+            <span class="lemma">κακός</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ζῶντας,</span>
+            <span class="lemma">ζήω</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀλλὰ</span>
+            <span class="lemma">ἀλλά</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τῷ</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">τίς</span>
+            <span class="lemma">τῷ</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">οἰκείῳ</span>
+            <span class="lemma">οἰκεῖος</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἔργῳ</span>
+            <span class="lemma">ἔργον</span>
+          </span>
+          <span class="word">
+            <span class="word-form">σχολάζειν.</span>
+            <span class="lemma">σχολάζω</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-5">
+          <span class="word">
+            <span class="word-form">εʹ.</span>
+            <span class="lemma">εʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Ποῖα</span>
+            <span class="lemma">ποῖος</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τῆς</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Γραφῆς</span>
+            <span class="lemma">γραφή</span>
+            <span class="lemma">γραφεύς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">βιβλία</span>
+            <span class="lemma">βιβλίον</span>
+          </span>
+          <span class="word">
+            <span class="word-form">δεῖ</span>
+            <span class="lemma">δέω</span>
+            <span class="lemma">δεῖ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀναγινώσκειν.</span>
+            <span class="lemma">ἀναγιγνώσκω</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-6">
+          <span class="word">
+            <span class="word-form">Ϛʹ.</span>
+            <span class="lemma">ϛʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τοῦ</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">τίς</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀπέχεσθαι</span>
+            <span class="lemma">ἀπέχω</span>
+          </span>
+          <span class="word">
+            <span class="word-form">πάντων</span>
+            <span class="lemma">πᾶς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τῶν</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἔξωθεν</span>
+            <span class="lemma">ἔξωθεν</span>
+          </span>
+          <span class="word">
+            <span class="word-form">βιβλίων.</span>
+            <span class="lemma">βιβλίον</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-7">
+          <span class="word">
+            <span class="word-form">ζʹ.</span>
+            <span class="lemma">ζʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">γυναικὸς</span>
+            <span class="lemma">γυνή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">φαύλης.</span>
+            <span class="lemma">φαῦλος</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-8">
+          <span class="word">
+            <span class="word-form">ηʹ.</span>
+            <span class="lemma">ηʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ὑποταγῆς</span>
+            <span class="lemma">ὑποτάσσω</span>
+          </span>
+          <span class="word">
+            <span class="word-form">γυναικὸς</span>
+            <span class="lemma">γυνή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">πρὸς</span>
+            <span class="lemma">πρός</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἄνδρα</span>
+            <span class="lemma">ἀνήρ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καὶ</span>
+            <span class="lemma">καί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">φιλάνδρου</span>
+            <span class="lemma">φίλανδρος</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καὶ</span>
+            <span class="lemma">καί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">σώφρονος.</span>
+            <span class="lemma">σώφρων</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τοῦ</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">τίς</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">μὴ</span>
+            <span class="lemma">μή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καλλωπίζεσθαι</span>
+            <span class="lemma">καλλωπίζω</span>
+          </span>
+          <span class="word">
+            <span class="word-form">γυναῖκα</span>
+            <span class="lemma">γυνή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">πιστὴν</span>
+            <span class="lemma">πιστός</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καὶ</span>
+            <span class="lemma">καί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ὅπως</span>
+            <span class="lemma">ὅπως</span>
+          </span>
+          <span class="word">
+            <span class="word-form">αὐτὴ</span>
+            <span class="lemma">αὐτός</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἐν</span>
+            <span class="lemma">ἐν</span>
+            <span class="lemma">ἐς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀγορᾷ</span>
+            <span class="lemma">ἀγορά</span>
+            <span class="lemma">ἀγοράομαι</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καὶ</span>
+            <span class="lemma">καί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">πανταχοῦ</span>
+            <span class="lemma">πανταχοῦ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">διαγίνεσθαι</span>
+            <span class="lemma">διαγίγνομαι</span>
+          </span>
+          <span class="word">
+            <span class="word-form">χρή.</span>
+            <span class="lemma">χρή</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-9">
+          <span class="word">
+            <span class="word-form">θʹ.</span>
+            <span class="lemma">θʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">τοῦ</span>
+            <span class="lemma">ὁ</span>
+            <span class="lemma">τίς</span>
+            <span class="lemma">ὅς</span>
+          </span>
+          <span class="word">
+            <span class="word-form">μὴ</span>
+            <span class="lemma">μή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">συλλούεσθαι</span>
+            <span class="lemma">συλλογή</span>
+          </span>
+          <span class="word">
+            <span class="word-form">ἀνδράσι</span>
+            <span class="lemma">ἀνήρ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">γυναῖκα.</span>
+            <span class="lemma">γυνή</span>
+          </span>
+        </a>
+      </li>
+      <li>
+        <a href="#chapter-10">
+          <span class="word">
+            <span class="word-form">ιʹ.</span>
+            <span class="lemma">ιʹ</span>
+          </span>
+          <span class="word">
+            <span class="word-form">Περὶ</span>
+            <span class="lemma">περί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">μαχίμου</span>
+            <span class="lemma">μάχιμος</span>
+          </span>
+          <span class="word">
+            <span class="word-form">καὶ</span>
+            <span class="lemma">καί</span>
+          </span>
+          <span class="word">
+            <span class="word-form">γλωσσώδους</span>
+            <span class="lemma">γλωσσαλγία</span>
+          </span>
+          <span class="word">
+            <span class="word-form">γυναικός.</span>
+            <span class="lemma">γυνή</span>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <h2 style="text-align: center;">
     <span class="word">
       <span class="word-form">ΒΙΒΛΙΟΝ</span>
       <span class="lemma">βιβλίον</span>
     </span>
     <span class="word">
-      <span class="word-form">Αʹ</span>
-      <span class="lemma">αʹ</span>
+      <span class="word-form">ΠΡΩΤΟΝ.</span>
+      <span class="lemma">πρωτογενής</span>
     </span>
     <br/>
     <span class="word">
-      <span class="word-form">Καθολικὴ</span>
-      <span class="lemma">καθολικός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">διδασκαλία</span>
-      <span class="lemma">διδασκαλία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">περὶ</span>
+      <span class="word-form">ΠΕΡΙ</span>
       <span class="lemma">περί</span>
     </span>
     <span class="word">
-      <span class="word-form">λαϊκῶν</span>
+      <span class="word-form">ΛΑΪΚΩΝ.</span>
       <span class="lemma">λάϊνος</span>
     </span>
   </h2>
   <section class="sc-level-2">
     <p>
       <span class="word">
-        <span class="word-form">αʹ.</span>
+        <span class="word-form">Οἱ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">οὗ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀπόστολοι</span>
+        <span class="lemma">ἀπόστολος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">οἱ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">οὗ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πρεσβύτεροι</span>
+        <span class="lemma">πρέσβυς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πᾶσι</span>
+        <span class="lemma">πᾶσις</span>
+        <span class="lemma">πᾶς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῖς</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐξ</span>
+        <span class="lemma">ἐκ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐθνῶν</span>
+        <span class="lemma">ἔθνος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πιστεύσασιν</span>
+        <span class="lemma">πιστεύω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐπὶ</span>
+        <span class="lemma">ἐπί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τὸν</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Κύριον</span>
+        <span class="lemma">κύριος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Ἰησοῦν</span>
+        <span class="lemma">Ἰησοῦς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Χριστόν:</span>
+        <span class="lemma">χριστός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Χάρις</span>
+        <span class="lemma">χάρις</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ὑμῖν</span>
+        <span class="lemma">σύ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">εἰρήνη</span>
+        <span class="lemma">εἰρήνη</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀπὸ</span>
+        <span class="lemma">ἀπό</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῦ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">τίς</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">παντοκράτορος</span>
+        <span class="lemma">παντοκράτωρ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Θεοῦ</span>
+        <span class="lemma">θεός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">διὰ</span>
+        <span class="lemma">διά</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῦ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">τίς</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Κυρίου</span>
+        <span class="lemma">κύριος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἡμῶν</span>
+        <span class="lemma">ἐγώ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Ἰησοῦ</span>
+        <span class="lemma">Ἰησοῦς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Χριστοῦ</span>
+        <span class="lemma">χριστός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πληθυνθείη</span>
+        <span class="lemma">πληθύνω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐν</span>
+        <span class="lemma">ἐν</span>
+        <span class="lemma">ἐς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐπιγνώσει</span>
+        <span class="lemma">ἐπιγιγνώσκω</span>
+        <span class="lemma">ἐπίγνωσις</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ.</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+    </p>
+    <p>
+      <span class="word">
+        <span class="word-form">Θεοῦ</span>
+        <span class="lemma">θεός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">φυτεία</span>
+        <span class="lemma">φυτεία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἡ</span>
+        <span class="lemma">ὁ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καθολικὴ</span>
+        <span class="lemma">καθολικός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Ἐκκλησία</span>
+        <span class="lemma">ἐκκλησία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀμπελὼν</span>
+        <span class="lemma">ἀμπελών</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐκλεκτός,</span>
+        <span class="lemma">ἐκλεκτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">οἱ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">οὗ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πεπιστευκότες</span>
+        <span class="lemma">πιστεύω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">εἰς</span>
+        <span class="lemma">εἰς</span>
+        <span class="lemma">εἰμί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τὴν</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀπλανῆ</span>
+        <span class="lemma">ἀπλανής</span>
+      </span>
+      <span class="word">
+        <span class="word-form">θεοσέβειαν</span>
+        <span class="lemma">θεοσέβεια</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ,</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">οἱ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">οὗ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τὴν</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αἰώνιον</span>
+        <span class="lemma">αἰώνιος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καρπούμενοι</span>
+        <span class="lemma">καρπόω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">διὰ</span>
+        <span class="lemma">διά</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πίστεως</span>
+        <span class="lemma">πίστις</span>
+      </span>
+      <span class="word">
+        <span class="word-form">βασιλείαν</span>
+        <span class="lemma">βασίλειος</span>
+        <span class="lemma">βασιλεία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ,</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">δύναμιν</span>
+        <span class="lemma">δύναμις</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">εἰληφότες</span>
+        <span class="lemma">λαμβάνω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">μετουσίαν</span>
+        <span class="lemma">μετουσία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἁγίου</span>
+        <span class="lemma">ἅγιος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Πνεύματος,</span>
+        <span class="lemma">πνεῦμα</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ὡπλισμένοι</span>
+        <span class="lemma">ὁπλίζω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">διὰ</span>
+        <span class="lemma">διά</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Ἰησοῦ</span>
+        <span class="lemma">Ἰησοῦς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐνστερνισμένοι</span>
+        <span class="lemma">ἐνστάζω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τὸν</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">φόβον</span>
+        <span class="lemma">φόβος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ,</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ῥαντίσματος</span>
+        <span class="lemma">ῥαντίζω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">μέτοχοι</span>
+        <span class="lemma">μέτοχος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῦ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">τίς</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τιμίου</span>
+        <span class="lemma">τιμιόω</span>
+        <span class="lemma">τίμιος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀθώου</span>
+        <span class="lemma">ἀθώπευτος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αἵματος</span>
+        <span class="lemma">αἷμα</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῦ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">τίς</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Χριστοῦ,</span>
+        <span class="lemma">χριστός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">οἱ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">οὗ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">παρρησίαν</span>
+        <span class="lemma">παρρησία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">εἰληφότες</span>
+        <span class="lemma">λαμβάνω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τὸν</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">παντοκράτορα</span>
+        <span class="lemma">παντοκράτωρ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Θεὸν</span>
+        <span class="lemma">θεός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πατέρα</span>
+        <span class="lemma">πατήρ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καλεῖν,</span>
+        <span class="lemma">καλέω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">συγκληρονόμοι</span>
+        <span class="lemma">συγκληρονόμος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
+      </span>
+      <span class="word">
+        <span class="word-form">συμμέτοχοι</span>
+        <span class="lemma">συμμέτοχος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῦ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">τίς</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἠγαπημένου</span>
+        <span class="lemma">ἀγαπάω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Παιδὸς</span>
+        <span class="lemma">παῖς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ:</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀκούσατε</span>
+        <span class="lemma">ἀκούω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">διδασκαλίαν</span>
+        <span class="lemma">διδασκαλία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἱεράν,</span>
+        <span class="lemma">ἱερός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">οἱ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">οὗ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀντεχόμενοι</span>
+        <span class="lemma">ἀντέχω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τῆς</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐπαγγελίας</span>
+        <span class="lemma">ἐπαγγελία</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐκ</span>
+        <span class="lemma">ἐκ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">προστάγματος</span>
+        <span class="lemma">πρόσταγμα</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τοῦ</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">τίς</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Σωτῆρος,</span>
+        <span class="lemma">σωτήρ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ὁμοστοίχως</span>
+        <span class="lemma">ὁμοστιχάω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ταῖς</span>
+        <span class="lemma">ὁ</span>
+        <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἐνδόξοις</span>
+        <span class="lemma">ἔνδοξος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">φθογγαῖς</span>
+        <span class="lemma">φθογγή</span>
+      </span>
+      <span class="word">
+        <span class="word-form">αὐτοῦ.</span>
+        <span class="lemma">αὐτός</span>
+      </span>
+    </p>
+  </section>
+  <section class="sc-level-2">
+    <h4 id="chapter-1">
+      <span class="word">
+        <span class="word-form">ΚΕΦΑΛΑΙΟΝ</span>
+        <span class="lemma">κεφάλαιος</span>
+        <span class="lemma">κεφάλαιον</span>
+      </span>
+      <span class="word">
+        <span class="word-form">Αʹ.</span>
         <span class="lemma">αʹ</span>
       </span>
+      <br/>
       <span class="word">
         <span class="word-form">Περὶ</span>
         <span class="lemma">περί</span>
@@ -69,885 +1039,7 @@
         <span class="word-form">πλεονεξίας.</span>
         <span class="lemma">πλεονεξία</span>
       </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">βʹ.</span>
-        <span class="lemma">βʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τοῦ</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">τίς</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">μὴ</span>
-        <span class="lemma">μή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀνθυβρίζειν</span>
-        <span class="lemma">ἀνθυβρίζω</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἢ</span>
-        <span class="lemma">ἤ</span>
-        <span class="lemma">τίη</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀμύνασθαι</span>
-        <span class="lemma">ἀμύνω</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τὸν</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀδικοῦντα.</span>
-        <span class="lemma">ἀδικέω</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">γʹ.</span>
-        <span class="lemma">γʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καλλωπισμοῦ</span>
-        <span class="lemma">καλλωπισμός</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καὶ</span>
-        <span class="lemma">καί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τῆς</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἐκεῖθεν</span>
-        <span class="lemma">ἐκεῖθεν</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἁμαρτίας.</span>
-        <span class="lemma">ἁμαρτία</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">δʹ.</span>
-        <span class="lemma">δʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Ὅτι</span>
-        <span class="lemma">ὅτι</span>
-        <span class="lemma">ὅστις</span>
-      </span>
-      <span class="word">
-        <span class="word-form">οὐ</span>
-        <span class="lemma">οὐ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">δεῖ</span>
-        <span class="lemma">δέω</span>
-        <span class="lemma">δεῖ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">περιεργάζεσθαι</span>
-        <span class="lemma">περιεργάζομαι</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τοὺς</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">κακῶς</span>
-        <span class="lemma">κακός</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ζῶντας,</span>
-        <span class="lemma">ζήω</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀλλὰ</span>
-        <span class="lemma">ἀλλά</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τῷ</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">τίς</span>
-        <span class="lemma">τῷ</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">οἰκείῳ</span>
-        <span class="lemma">οἰκεῖος</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἔργῳ</span>
-        <span class="lemma">ἔργον</span>
-      </span>
-      <span class="word">
-        <span class="word-form">σχολάζειν.</span>
-        <span class="lemma">σχολάζω</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">εʹ.</span>
-        <span class="lemma">εʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Ποῖα</span>
-        <span class="lemma">ποῖος</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τῆς</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Γραφῆς</span>
-        <span class="lemma">γραφή</span>
-        <span class="lemma">γραφεύς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">βιβλία</span>
-        <span class="lemma">βιβλίον</span>
-      </span>
-      <span class="word">
-        <span class="word-form">δεῖ</span>
-        <span class="lemma">δέω</span>
-        <span class="lemma">δεῖ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀναγινώσκειν.</span>
-        <span class="lemma">ἀναγιγνώσκω</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">Ϛʹ.</span>
-        <span class="lemma">ϛʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τοῦ</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">τίς</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀπέχεσθαι</span>
-        <span class="lemma">ἀπέχω</span>
-      </span>
-      <span class="word">
-        <span class="word-form">πάντων</span>
-        <span class="lemma">πᾶς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τῶν</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἔξωθεν</span>
-        <span class="lemma">ἔξωθεν</span>
-      </span>
-      <span class="word">
-        <span class="word-form">βιβλίων.</span>
-        <span class="lemma">βιβλίον</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">ζʹ.</span>
-        <span class="lemma">ζʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">γυναικὸς</span>
-        <span class="lemma">γυνή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">φαύλης.</span>
-        <span class="lemma">φαῦλος</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">ηʹ.</span>
-        <span class="lemma">ηʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ὑποταγῆς</span>
-        <span class="lemma">ὑποτάσσω</span>
-      </span>
-      <span class="word">
-        <span class="word-form">γυναικὸς</span>
-        <span class="lemma">γυνή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">πρὸς</span>
-        <span class="lemma">πρός</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἄνδρα</span>
-        <span class="lemma">ἀνήρ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καὶ</span>
-        <span class="lemma">καί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">φιλάνδρου</span>
-        <span class="lemma">φίλανδρος</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καὶ</span>
-        <span class="lemma">καί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">σώφρονος.</span>
-        <span class="lemma">σώφρων</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τοῦ</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">τίς</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">μὴ</span>
-        <span class="lemma">μή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καλλωπίζεσθαι</span>
-        <span class="lemma">καλλωπίζω</span>
-      </span>
-      <span class="word">
-        <span class="word-form">γυναῖκα</span>
-        <span class="lemma">γυνή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">πιστὴν</span>
-        <span class="lemma">πιστός</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καὶ</span>
-        <span class="lemma">καί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ὅπως</span>
-        <span class="lemma">ὅπως</span>
-      </span>
-      <span class="word">
-        <span class="word-form">αὐτὴ</span>
-        <span class="lemma">αὐτός</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἐν</span>
-        <span class="lemma">ἐν</span>
-        <span class="lemma">ἐς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀγορᾷ</span>
-        <span class="lemma">ἀγορά</span>
-        <span class="lemma">ἀγοράομαι</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καὶ</span>
-        <span class="lemma">καί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">πανταχοῦ</span>
-        <span class="lemma">πανταχοῦ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">διαγίνεσθαι</span>
-        <span class="lemma">διαγίγνομαι</span>
-      </span>
-      <span class="word">
-        <span class="word-form">χρή.</span>
-        <span class="lemma">χρή</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">θʹ.</span>
-        <span class="lemma">θʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">τοῦ</span>
-        <span class="lemma">ὁ</span>
-        <span class="lemma">τίς</span>
-        <span class="lemma">ὅς</span>
-      </span>
-      <span class="word">
-        <span class="word-form">μὴ</span>
-        <span class="lemma">μή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">συλλούεσθαι</span>
-        <span class="lemma">συλλογή</span>
-      </span>
-      <span class="word">
-        <span class="word-form">ἀνδράσι</span>
-        <span class="lemma">ἀνήρ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">γυναῖκα.</span>
-        <span class="lemma">γυνή</span>
-      </span>
-    </p>
-    <p>
-      <span class="word">
-        <span class="word-form">ιʹ.</span>
-        <span class="lemma">ιʹ</span>
-      </span>
-      <span class="word">
-        <span class="word-form">Περὶ</span>
-        <span class="lemma">περί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">μαχίμου</span>
-        <span class="lemma">μάχιμος</span>
-      </span>
-      <span class="word">
-        <span class="word-form">καὶ</span>
-        <span class="lemma">καί</span>
-      </span>
-      <span class="word">
-        <span class="word-form">γλωσσώδους</span>
-        <span class="lemma">γλωσσαλγία</span>
-      </span>
-      <span class="word">
-        <span class="word-form">γυναικός.</span>
-        <span class="lemma">γυνή</span>
-      </span>
-    </p>
-  </section>
-  <section class="sc-level-2">
-    <span class="word">
-      <span class="word-form">[Πρ.]</span>
-      <span class="lemma">πρ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Οἱ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">οὗ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀπόστολοι</span>
-      <span class="lemma">ἀπόστολος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">οἱ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">οὗ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πρεσβύτεροι</span>
-      <span class="lemma">πρέσβυς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πᾶσι</span>
-      <span class="lemma">πᾶσις</span>
-      <span class="lemma">πᾶς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῖς</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐξ</span>
-      <span class="lemma">ἐκ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐθνῶν</span>
-      <span class="lemma">ἔθνος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πιστεύσασιν</span>
-      <span class="lemma">πιστεύω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐπὶ</span>
-      <span class="lemma">ἐπί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τὸν</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Κύριον</span>
-      <span class="lemma">κύριος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Ἰησοῦν</span>
-      <span class="lemma">Ἰησοῦς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Χριστόν:</span>
-      <span class="lemma">χριστός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Χάρις</span>
-      <span class="lemma">χάρις</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ὑμῖν</span>
-      <span class="lemma">σύ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">εἰρήνη</span>
-      <span class="lemma">εἰρήνη</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀπὸ</span>
-      <span class="lemma">ἀπό</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῦ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">τίς</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">παντοκράτορος</span>
-      <span class="lemma">παντοκράτωρ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Θεοῦ</span>
-      <span class="lemma">θεός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">διὰ</span>
-      <span class="lemma">διά</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῦ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">τίς</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Κυρίου</span>
-      <span class="lemma">κύριος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἡμῶν</span>
-      <span class="lemma">ἐγώ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Ἰησοῦ</span>
-      <span class="lemma">Ἰησοῦς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Χριστοῦ</span>
-      <span class="lemma">χριστός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πληθυνθείη</span>
-      <span class="lemma">πληθύνω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐν</span>
-      <span class="lemma">ἐν</span>
-      <span class="lemma">ἐς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐπιγνώσει</span>
-      <span class="lemma">ἐπιγιγνώσκω</span>
-      <span class="lemma">ἐπίγνωσις</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ.</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Θεοῦ</span>
-      <span class="lemma">θεός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">φυτεία</span>
-      <span class="lemma">φυτεία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἡ</span>
-      <span class="lemma">ὁ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καθολικὴ</span>
-      <span class="lemma">καθολικός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Ἐκκλησία</span>
-      <span class="lemma">ἐκκλησία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀμπελὼν</span>
-      <span class="lemma">ἀμπελών</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐκλεκτός,</span>
-      <span class="lemma">ἐκλεκτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">οἱ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">οὗ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πεπιστευκότες</span>
-      <span class="lemma">πιστεύω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">εἰς</span>
-      <span class="lemma">εἰς</span>
-      <span class="lemma">εἰμί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τὴν</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀπλανῆ</span>
-      <span class="lemma">ἀπλανής</span>
-    </span>
-    <span class="word">
-      <span class="word-form">θεοσέβειαν</span>
-      <span class="lemma">θεοσέβεια</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ,</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">οἱ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">οὗ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τὴν</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αἰώνιον</span>
-      <span class="lemma">αἰώνιος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καρπούμενοι</span>
-      <span class="lemma">καρπόω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">διὰ</span>
-      <span class="lemma">διά</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πίστεως</span>
-      <span class="lemma">πίστις</span>
-    </span>
-    <span class="word">
-      <span class="word-form">βασιλείαν</span>
-      <span class="lemma">βασίλειος</span>
-      <span class="lemma">βασιλεία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ,</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">δύναμιν</span>
-      <span class="lemma">δύναμις</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">εἰληφότες</span>
-      <span class="lemma">λαμβάνω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">μετουσίαν</span>
-      <span class="lemma">μετουσία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἁγίου</span>
-      <span class="lemma">ἅγιος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Πνεύματος,</span>
-      <span class="lemma">πνεῦμα</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ὡπλισμένοι</span>
-      <span class="lemma">ὁπλίζω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">διὰ</span>
-      <span class="lemma">διά</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Ἰησοῦ</span>
-      <span class="lemma">Ἰησοῦς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐνστερνισμένοι</span>
-      <span class="lemma">ἐνστάζω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τὸν</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">φόβον</span>
-      <span class="lemma">φόβος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ,</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ῥαντίσματος</span>
-      <span class="lemma">ῥαντίζω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">μέτοχοι</span>
-      <span class="lemma">μέτοχος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῦ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">τίς</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τιμίου</span>
-      <span class="lemma">τιμιόω</span>
-      <span class="lemma">τίμιος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀθώου</span>
-      <span class="lemma">ἀθώπευτος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αἵματος</span>
-      <span class="lemma">αἷμα</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῦ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">τίς</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Χριστοῦ,</span>
-      <span class="lemma">χριστός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">οἱ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">οὗ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">παρρησίαν</span>
-      <span class="lemma">παρρησία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">εἰληφότες</span>
-      <span class="lemma">λαμβάνω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τὸν</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">παντοκράτορα</span>
-      <span class="lemma">παντοκράτωρ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Θεὸν</span>
-      <span class="lemma">θεός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">πατέρα</span>
-      <span class="lemma">πατήρ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καλεῖν,</span>
-      <span class="lemma">καλέω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">συγκληρονόμοι</span>
-      <span class="lemma">συγκληρονόμος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">καὶ</span>
-      <span class="lemma">καί</span>
-    </span>
-    <span class="word">
-      <span class="word-form">συμμέτοχοι</span>
-      <span class="lemma">συμμέτοχος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῦ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">τίς</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἠγαπημένου</span>
-      <span class="lemma">ἀγαπάω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Παιδὸς</span>
-      <span class="lemma">παῖς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ:</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀκούσατε</span>
-      <span class="lemma">ἀκούω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">διδασκαλίαν</span>
-      <span class="lemma">διδασκαλία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἱεράν,</span>
-      <span class="lemma">ἱερός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">οἱ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">οὗ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἀντεχόμενοι</span>
-      <span class="lemma">ἀντέχω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τῆς</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐπαγγελίας</span>
-      <span class="lemma">ἐπαγγελία</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐκ</span>
-      <span class="lemma">ἐκ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">προστάγματος</span>
-      <span class="lemma">πρόσταγμα</span>
-    </span>
-    <span class="word">
-      <span class="word-form">τοῦ</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">τίς</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">Σωτῆρος,</span>
-      <span class="lemma">σωτήρ</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ὁμοστοίχως</span>
-      <span class="lemma">ὁμοστιχάω</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ταῖς</span>
-      <span class="lemma">ὁ</span>
-      <span class="lemma">ὅς</span>
-    </span>
-    <span class="word">
-      <span class="word-form">ἐνδόξοις</span>
-      <span class="lemma">ἔνδοξος</span>
-    </span>
-    <span class="word">
-      <span class="word-form">φθογγαῖς</span>
-      <span class="lemma">φθογγή</span>
-    </span>
-    <span class="word">
-      <span class="word-form">αὐτοῦ.</span>
-      <span class="lemma">αὐτός</span>
-    </span>
-  </section>
-  <section class="sc-level-2">
-    <h4>1.</h4>
+    </h4>
     <span class="word">
       <span class="word-form">Φυλάσσεσθε,</span>
       <span class="lemma">φυλάσσω</span>
@@ -2613,7 +2705,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>2.</h4>
+    <h4 id="chapter-2">2.</h4>
     <span class="word">
       <span class="word-form">Ἀλλὰ</span>
       <span class="lemma">ἀλλά</span>
@@ -3157,7 +3249,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>3.</h4>
+    <h4 id="chapter-3">3.</h4>
     <span class="word">
       <span class="word-form">Βαστάξετε</span>
       <span class="lemma">βαστάζω</span>
@@ -5056,7 +5148,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>4.</h4>
+    <h4 id="chapter-4">4.</h4>
     <span class="word">
       <span class="word-form">Οὐκ</span>
       <span class="lemma">οὐ</span>
@@ -5347,7 +5439,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>5.</h4>
+    <h4 id="chapter-5">5.</h4>
     <span class="word">
       <span class="word-form">Ἀλλ'</span>
       <span class="lemma">ἀλαβαρχέω</span>
@@ -5571,7 +5663,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>6.</h4>
+    <h4 id="chapter-6">6.</h4>
     <span class="word">
       <span class="word-form">Τῶν</span>
       <span class="lemma">ὁ</span>
@@ -7118,7 +7210,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>7.</h4>
+    <h4 id="chapter-7">7.</h4>
     <span class="word">
       <span class="word-form">Μάθωμεν</span>
       <span class="lemma">μανθάνω</span>
@@ -8548,7 +8640,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>8.</h4>
+    <h4 id="chapter-8">8.</h4>
     <span class="word">
       <span class="word-form">Ἡ</span>
       <span class="lemma">ὁ</span>
@@ -11529,7 +11621,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>9.</h4>
+    <h4 id="chapter-9">9.</h4>
     <span class="word">
       <span class="word-form">Περιίστασο</span>
       <span class="lemma">περιίστημι</span>
@@ -11934,7 +12026,7 @@
     </span>
   </section>
   <section class="sc-level-2">
-    <h4>10.</h4>
+    <h4 id="chapter-10">10.</h4>
     <span class="word">
       <span class="word-form">Τὸ</span>
       <span class="lemma">ὁ</span>

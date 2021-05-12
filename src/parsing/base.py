@@ -64,6 +64,9 @@ class Parser:
         normed = {}
 
         for w in words:
+            lem = w.xpath('.//span[@class="lemma"]')
+            if lem:
+                continue
             try:
                 normalized = norm_word(w.xpath('.//span[@class="word-form"]')[0].text)
             except Exception:

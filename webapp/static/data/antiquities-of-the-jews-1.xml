@@ -144,7 +144,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -152,8 +152,13 @@
         <span class="lemma">αὐτός</span>
       </span>
       <span class="word">
-        <span class="word-form">θηρευόμενοιδόξαν</span>
+        <span class="word-form">θηρευόμενοι</span>
         <span class="lemma">θηρεύω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">δόξαν</span>
+        <span class="lemma">δοκέω</span>
+        <span class="lemma">δόξα</span>
       </span>
       <span class="word">
         <span class="word-form">ἐπὶ</span>
@@ -255,16 +260,20 @@
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
-        <span class="word-form">δύναμινὑπέστησαν:</span>
+        <span class="word-form">δύναμιν</span>
         <span class="lemma">δύναμις</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ὑπέστησαν:</span>
+        <span class="lemma">ὑφίστημι</span>
       </span>
       <span class="word">
         <span class="word-form">εἰσὶ</span>
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οἵτινες</span>
@@ -275,7 +284,7 @@
         <span class="lemma">βιάζω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -297,8 +306,12 @@
         <span class="lemma">πρᾶγμα</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀνάγκηςοἷς</span>
+        <span class="word-form">ἀνάγκης</span>
         <span class="lemma">ἀνάγκη</span>
+      </span>
+      <span class="word">
+        <span class="word-form">οἷς</span>
+        <span class="lemma">ὅς</span>
       </span>
       <span class="word">
         <span class="word-form">πραττομένοις</span>
@@ -330,8 +343,12 @@
         <span class="lemma">πολύς</span>
       </span>
       <span class="word">
-        <span class="word-form">δὲχρησίμων</span>
+        <span class="word-form">δὲ</span>
         <span class="lemma">δέ</span>
+      </span>
+      <span class="word">
+        <span class="word-form">χρησίμων</span>
+        <span class="lemma">χρήσιμος</span>
       </span>
       <span class="word">
         <span class="word-form">μέγεθος</span>
@@ -368,8 +385,12 @@
         <span class="lemma">περί</span>
       </span>
       <span class="word">
-        <span class="word-form">αὐτῶνἱστορίαν</span>
+        <span class="word-form">αὐτῶν</span>
         <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἱστορίαν</span>
+        <span class="lemma">ἱστορία</span>
       </span>
       <span class="word">
         <span class="word-form">εἰς</span>
@@ -454,8 +475,12 @@
         <span class="lemma">Ῥωμαῖος</span>
       </span>
       <span class="word">
-        <span class="word-form">πόλεμονἡμῖν</span>
+        <span class="word-form">πόλεμον</span>
         <span class="lemma">πόλεμος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἡμῖν</span>
+        <span class="lemma">ἐγώ</span>
       </span>
       <span class="word">
         <span class="word-form">τοῖς</span>
@@ -511,8 +536,12 @@
         <span class="lemma">οἷος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπέβηπείρᾳ</span>
+        <span class="word-form">ἀπέβη</span>
         <span class="lemma">ἀποβαίνω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πείρᾳ</span>
+        <span class="lemma">πεῖρα</span>
       </span>
       <span class="word">
         <span class="word-form">μαθὼν</span>
@@ -556,9 +585,13 @@
         <span class="lemma">λυμαίνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">τὴνἀλήθειαν,</span>
+        <span class="word-form">τὴν</span>
         <span class="lemma">ὁ</span>
         <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἀλήθειαν,</span>
+        <span class="lemma">ἀλήθεια</span>
       </span>
       <span class="word">
         <span class="word-form">ταύτην</span>
@@ -586,8 +619,12 @@
         <span class="lemma">πραγματεία</span>
       </span>
       <span class="word">
-        <span class="word-form">νομίζωνἅπασι</span>
+        <span class="word-form">νομίζων</span>
         <span class="lemma">νομίζω</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἅπασι</span>
+        <span class="lemma">ἅπας</span>
       </span>
       <span class="word">
         <span class="word-form">φανεῖσθαι</span>
@@ -628,9 +665,13 @@
         <span class="lemma">ἅπας</span>
       </span>
       <span class="word">
-        <span class="word-form">τὴνπαρ᾽</span>
+        <span class="word-form">τὴν</span>
         <span class="lemma">ὁ</span>
         <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">παρ'</span>
+        <span class="lemma">πη</span>
       </span>
       <span class="word">
         <span class="word-form">ἡμῖν</span>
@@ -668,8 +709,12 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">Ἑβραϊκῶνμεθηρμηνευμένην</span>
+        <span class="word-form">Ἑβραϊκῶν</span>
         <span class="lemma">Ἑβραϊκός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">μεθηρμηνευμένην</span>
+        <span class="lemma">μεθερμηνεύω</span>
       </span>
       <span class="word">
         <span class="word-form">γραμμάτων.</span>
@@ -705,9 +750,13 @@
         <span class="lemma">ὅτε</span>
       </span>
       <span class="word">
-        <span class="word-form">τὸνπόλεμον</span>
+        <span class="word-form">τὸν</span>
         <span class="lemma">ὁ</span>
         <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">πόλεμον</span>
+        <span class="lemma">πόλεμος</span>
       </span>
       <span class="word">
         <span class="word-form">συνέγραφον,</span>
@@ -750,11 +799,15 @@
         <span class="lemma">τις</span>
       </span>
       <span class="word">
-        <span class="word-form">χρησάμενοιτύχαις</span>
+        <span class="word-form">χρησάμενοι</span>
         <span class="lemma">χράομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">τύχαις</span>
+        <span class="lemma">τύχη</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -797,8 +850,12 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἄλληνἄσκησιν</span>
+        <span class="word-form">ἄλλην</span>
         <span class="lemma">ἄλλος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">ἄσκησιν</span>
+        <span class="lemma">ἄσκησις</span>
       </span>
       <span class="word">
         <span class="word-form">ἀρετῆς</span>
@@ -839,9 +896,13 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">τὸντελευταῖον</span>
+        <span class="word-form">τὸν</span>
         <span class="lemma">ὁ</span>
         <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">τελευταῖον</span>
+        <span class="lemma">τελευταῖος</span>
       </span>
       <span class="word">
         <span class="word-form">ἄκοντες</span>
@@ -860,7 +921,7 @@
         <span class="lemma">καθίστημι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -896,7 +957,7 @@
         <span class="lemma">περιβολή</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -925,8 +986,12 @@
         <span class="lemma">ἀρχή</span>
       </span>
       <span class="word">
-        <span class="word-form">αὐτοῦκαὶ</span>
+        <span class="word-form">αὐτοῦ</span>
         <span class="lemma">αὐτός</span>
+      </span>
+      <span class="word">
+        <span class="word-form">καὶ</span>
+        <span class="lemma">καί</span>
       </span>
       <span class="word">
         <span class="word-form">τῷ</span>
@@ -974,9 +1039,13 @@
         <span class="lemma">φιλέω</span>
       </span>
       <span class="word">
-        <span class="word-form">τοῖςμεγάλων</span>
+        <span class="word-form">τοῖς</span>
         <span class="lemma">ὁ</span>
         <span class="lemma">ὅς</span>
+      </span>
+      <span class="word">
+        <span class="word-form">μεγάλων</span>
+        <span class="lemma">μέγας</span>
       </span>
       <span class="word">
         <span class="word-form">ἅπτεσθαι</span>
@@ -1007,8 +1076,12 @@
         <span class="lemma">γίγνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">τηλικαύτηνμετενεγκεῖν</span>
+        <span class="word-form">τηλικαύτην</span>
         <span class="lemma">τηλικοῦτος</span>
+      </span>
+      <span class="word">
+        <span class="word-form">μετενεγκεῖν</span>
+        <span class="lemma">μεταφέρω</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπόθεσιν</span>
@@ -1076,7 +1149,7 @@
         <span class="lemma">ἱστορία</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -1443,7 +1516,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -1545,7 +1618,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -1601,7 +1674,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -1899,8 +1972,8 @@
         <span class="lemma">μύριοι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐστὶ</span>
@@ -2162,7 +2235,7 @@
         <span class="lemma">θεός</span>
       </span>
       <span class="word">
-        <span class="word-form">καθ᾽</span>
+        <span class="word-form">καθ'</span>
         <span class="lemma">κατά</span>
         <span class="lemma">καθό</span>
         <span class="lemma">καθά</span>
@@ -2172,8 +2245,8 @@
         <span class="lemma">ὅσος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἂν</span>
@@ -2250,7 +2323,7 @@
         <span class="lemma">τις</span>
       </span>
       <span class="word">
-        <span class="word-form">ποτ᾽</span>
+        <span class="word-form">ποτ'</span>
         <span class="lemma">ποτε</span>
         <span class="lemma">πρός</span>
       </span>
@@ -2427,7 +2500,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -2509,7 +2582,7 @@
         <span class="lemma">δισχίλιοι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽ὅσον</span>
+        <span class="word-form">ἐφ'ὅσον</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -2521,7 +2594,7 @@
         <span class="lemma">αἰών</span>
       </span>
       <span class="word">
-        <span class="word-form">οὐδ᾿</span>
+        <span class="word-form">οὐδ'</span>
         <span class="lemma">οὐδέ</span>
       </span>
       <span class="word">
@@ -2703,7 +2776,7 @@
         <span class="lemma">οὐδείς</span>
       </span>
       <span class="word">
-        <span class="word-form">προσθεὶςοὐδ᾿</span>
+        <span class="word-form">προσθεὶςοὐδ'</span>
         <span class="lemma">προστίθημι</span>
       </span>
       <span class="word">
@@ -3024,7 +3097,7 @@
         <span class="lemma">ἄριστος</span>
       </span>
       <span class="word">
-        <span class="word-form">μιμεῖσθαικαθ᾽</span>
+        <span class="word-form">μιμεῖσθαικαθ'</span>
         <span class="lemma">μιμέομαι</span>
       </span>
       <span class="word">
@@ -3064,7 +3137,7 @@
         <span class="lemma">αὐτός</span>
       </span>
       <span class="word">
-        <span class="word-form">ποτ᾽</span>
+        <span class="word-form">ποτ'</span>
         <span class="lemma">ποτε</span>
         <span class="lemma">πρός</span>
       </span>
@@ -3373,7 +3446,7 @@
         <span class="lemma">ἄλλος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -3623,8 +3696,8 @@
         <span class="lemma">ὁ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἡμέτερος</span>
@@ -3786,7 +3859,7 @@
         <span class="lemma">οὐδείς</span>
       </span>
       <span class="word">
-        <span class="word-form">οὔτ᾽ἄλογον</span>
+        <span class="word-form">οὔτ'ἄλογον</span>
         <span class="lemma">οὔτε</span>
       </span>
       <span class="word">
@@ -3908,8 +3981,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἀλληγοροῦντος</span>
@@ -3928,8 +4001,8 @@
         <span class="lemma">ὅσος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿ἐξ</span>
-        <span class="lemma">δ᾿ἐξ</span>
+        <span class="word-form">δ'ἐξ</span>
+        <span class="lemma">δ'ἐξ</span>
       </span>
       <span class="word">
         <span class="word-form">εὐθείας</span>
@@ -3992,7 +4065,7 @@
         <span class="lemma">πολύς</span>
       </span>
       <span class="word">
-        <span class="word-form">γένοιτ᾽</span>
+        <span class="word-form">γένοιτ'</span>
         <span class="lemma">γίγνομαι</span>
       </span>
       <span class="word">
@@ -4152,8 +4225,8 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐν</span>
@@ -4249,11 +4322,11 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -4293,8 +4366,8 @@
         <span class="lemma">πνεῦμα</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -4521,8 +4594,8 @@
         <span class="lemma">Μωυσῆς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -4579,8 +4652,8 @@
         <span class="lemma">ἐπεί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπέσχημαι</span>
@@ -4699,7 +4772,7 @@
         <span class="lemma">ἐπιτίθημι</span>
       </span>
       <span class="word">
-        <span class="word-form">ὅτ᾽</span>
+        <span class="word-form">ὅτ'</span>
         <span class="lemma">ὅστε</span>
         <span class="lemma">ὅτε</span>
       </span>
@@ -4725,7 +4798,7 @@
         <span class="lemma">διακρίνω</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -4867,7 +4940,7 @@
         <span class="lemma">θάλασσα</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -5047,7 +5120,7 @@
         <span class="lemma">τε</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -5094,7 +5167,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -5604,8 +5677,8 @@
         <span class="lemma">ὁ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἄνθρωπος</span>
@@ -5887,8 +5960,8 @@
         <span class="lemma">ξενίζω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐπὶ</span>
@@ -5996,7 +6069,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">καθ᾽</span>
+        <span class="word-form">καθ'</span>
         <span class="lemma">κατά</span>
         <span class="lemma">καθό</span>
         <span class="lemma">καθά</span>
@@ -6023,8 +6096,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐκείνης</span>
@@ -6139,8 +6212,8 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἶναι</span>
@@ -6312,8 +6385,8 @@
         <span class="lemma">ἄρδω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὗτος</span>
@@ -6450,7 +6523,7 @@
         <span class="lemma">πέλαγος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -6770,7 +6843,7 @@
         <span class="lemma">ἅπτω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -6794,7 +6867,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -6867,7 +6940,7 @@
         <span class="lemma">ἔχω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -7358,8 +7431,8 @@
         <span class="lemma">θεός</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰς</span>
@@ -7480,7 +7553,7 @@
         <span class="lemma">πυνθάνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -7592,7 +7665,7 @@
         <span class="lemma">πρόσταξις</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -7689,8 +7762,8 @@
         <span class="lemma">πᾶς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑμῖν</span>
@@ -7830,8 +7903,8 @@
         <span class="lemma">νῦν</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰς</span>
@@ -7886,7 +7959,7 @@
         <span class="lemma">γάρ</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -7908,7 +7981,7 @@
         <span class="lemma">ἄγω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -8009,7 +8082,7 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -8029,8 +8102,8 @@
         <span class="lemma">ὁ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὖ</span>
@@ -8172,8 +8245,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὐκ</span>
@@ -8822,7 +8895,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -8864,8 +8937,8 @@
         <span class="lemma">ποιμενικός</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἦν</span>
@@ -9163,7 +9236,7 @@
         <span class="lemma">τιμάω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -9176,7 +9249,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -9360,7 +9433,7 @@
         <span class="lemma">ποῖ</span>
       </span>
       <span class="word">
-        <span class="word-form">ποτ᾽</span>
+        <span class="word-form">ποτ'</span>
         <span class="lemma">ποτε</span>
         <span class="lemma">πρός</span>
       </span>
@@ -9411,7 +9484,7 @@
         <span class="lemma">πᾶς</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -9599,7 +9672,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -9765,7 +9838,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -9803,8 +9876,8 @@
         <span class="lemma">ἐπάρατος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸν</span>
@@ -9977,7 +10050,7 @@
         <span class="lemma">αἴτιος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -10080,8 +10153,8 @@
         <span class="lemma">πολύς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐπελθὼν</span>
@@ -10150,7 +10223,7 @@
         <span class="lemma">κατοίκησις</span>
       </span>
       <span class="word">
-        <span class="word-form">ἔνθ᾽</span>
+        <span class="word-form">ἔνθ'</span>
         <span class="lemma">ἔνθα</span>
         <span class="lemma">ἔρχομαι</span>
         <span class="lemma">εἰμί</span>
@@ -10201,11 +10274,11 @@
         <span class="lemma">λαμβάνω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -10259,7 +10332,7 @@
         <span class="lemma">ἄν</span>
       </span>
       <span class="word">
-        <span class="word-form">μεθ᾽</span>
+        <span class="word-form">μεθ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -10804,8 +10877,8 @@
         <span class="lemma">ὁμομήτριος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἦν</span>
@@ -11191,8 +11264,8 @@
         <span class="lemma">ἄλλος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἴ</span>
@@ -11397,7 +11470,7 @@
         <span class="lemma">ἔτος</span>
       </span>
       <span class="word">
-        <span class="word-form">τριάκοντ᾽</span>
+        <span class="word-form">τριάκοντ'</span>
         <span class="lemma">τριάκοντα</span>
       </span>
       <span class="word">
@@ -11880,7 +11953,7 @@
         <span class="lemma">μέν</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -12078,7 +12151,7 @@
         <span class="lemma">πλίνθινος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -12095,8 +12168,8 @@
         <span class="lemma">μένος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἄχρι</span>
@@ -12310,7 +12383,7 @@
         <span class="lemma">λόγος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -12352,7 +12425,7 @@
         <span class="lemma">κακία</span>
       </span>
       <span class="word">
-        <span class="word-form">τότ᾽</span>
+        <span class="word-form">τότ'</span>
         <span class="lemma">τότε</span>
       </span>
       <span class="word">
@@ -12360,7 +12433,7 @@
         <span class="lemma">ἐπιδείκνυμι</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -12500,7 +12573,7 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -12542,7 +12615,7 @@
         <span class="lemma">πράσσω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -12628,8 +12701,8 @@
         <span class="lemma">ὁράω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὐκ</span>
@@ -12640,7 +12713,7 @@
         <span class="lemma">ἐνδίδωμι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -12782,8 +12855,8 @@
         <span class="lemma">καταδικάζω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὐκ</span>
@@ -12920,7 +12993,7 @@
         <span class="lemma">ζήω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -13284,8 +13357,8 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἡ</span>
@@ -13338,7 +13411,7 @@
         <span class="lemma">ἐπικλύζω</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -13403,8 +13476,8 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸς</span>
@@ -13674,8 +13747,8 @@
         <span class="lemma">μάρσιππος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπὸ</span>
@@ -13808,8 +13881,8 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
@@ -13921,8 +13994,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐπομβρίαν</span>
@@ -15260,7 +15333,7 @@
         <span class="lemma">ὕδωρ</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -15310,7 +15383,7 @@
         <span class="lemma">ἕβδομος</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -15391,8 +15464,8 @@
         <span class="lemma">ἀνοίγνυμι</span>
       </span>
       <span class="word">
-        <span class="word-form">τ᾽</span>
-        <span class="lemma">τ᾽</span>
+        <span class="word-form">τ'</span>
+        <span class="lemma">τ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -15451,8 +15524,8 @@
         <span class="lemma">ὀλίγος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὕστερον</span>
@@ -16122,8 +16195,8 @@
         <span class="lemma">χράω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οἱ</span>
@@ -16475,8 +16548,8 @@
         <span class="lemma">γίγνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἂν</span>
@@ -16535,7 +16608,7 @@
         <span class="lemma">μή</span>
       </span>
       <span class="word">
-        <span class="word-form">καθ᾽</span>
+        <span class="word-form">καθ'</span>
         <span class="lemma">κατά</span>
         <span class="lemma">καθό</span>
         <span class="lemma">καθά</span>
@@ -16659,7 +16732,7 @@
         <span class="lemma">πάθος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -16830,8 +16903,8 @@
         <span class="lemma">τηρέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἑτέρῳ</span>
@@ -17260,7 +17333,7 @@
         <span class="lemma">δίκη</span>
       </span>
       <span class="word">
-        <span class="word-form">οὔτ᾽</span>
+        <span class="word-form">οὔτ'</span>
         <span class="lemma">οὔτε</span>
       </span>
       <span class="word">
@@ -17372,7 +17445,7 @@
         <span class="lemma">διαφθείρω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -17526,8 +17599,8 @@
         <span class="lemma">εἰ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐπὶ</span>
@@ -17938,7 +18011,7 @@
         <span class="lemma">θεός</span>
       </span>
       <span class="word">
-        <span class="word-form">ταῦτ᾽</span>
+        <span class="word-form">ταῦτ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -18212,7 +18285,7 @@
         <span class="lemma">τεκμαίρομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -18277,7 +18350,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -18365,7 +18438,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -18535,7 +18608,7 @@
         <span class="lemma">οὗ</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -18697,7 +18770,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -19379,8 +19452,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἰσχὺν</span>
@@ -19473,7 +19546,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -19658,7 +19731,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -19716,7 +19789,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -20126,12 +20199,12 @@
         <span class="lemma">τοσοῦτος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὥσθ᾽</span>
+        <span class="word-form">ὥσθ'</span>
         <span class="lemma">ὥστε</span>
         <span class="lemma">ὡς</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -20264,7 +20337,7 @@
         <span class="lemma">ὅστις</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -20580,7 +20653,7 @@
         <span class="lemma">ἀναβαίνω</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -20961,8 +21034,8 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οἳ</span>
@@ -21118,8 +21191,8 @@
         <span class="lemma">Ἕλλην</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰσὶν</span>
@@ -21254,7 +21327,7 @@
         <span class="lemma">ὡς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀφ᾽</span>
+        <span class="word-form">ἀφ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -21558,7 +21631,7 @@
         <span class="lemma">νῦν</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -21610,7 +21683,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -21639,7 +21712,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -21886,7 +21959,7 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -22305,7 +22378,7 @@
         <span class="lemma">γάρ</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -22428,7 +22501,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -22585,7 +22658,7 @@
         <span class="lemma">καλέω</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -22661,15 +22734,15 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἴσως</span>
         <span class="lemma">ἴσος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -22804,7 +22877,7 @@
         <span class="lemma">τύπος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -23357,7 +23430,7 @@
         <span class="lemma">Φοῦτος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -23566,7 +23639,7 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -23578,8 +23651,8 @@
         <span class="lemma">πολύς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐροῦμεν</span>
@@ -23596,7 +23669,7 @@
         <span class="lemma">αἴτιος</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -23672,7 +23745,7 @@
         <span class="lemma">οἰκίζω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -23796,7 +23869,7 @@
         <span class="lemma">ἀστάθμητος</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -24176,7 +24249,7 @@
         <span class="lemma">χώρα</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -24361,11 +24434,11 @@
         <span class="lemma">Σιδών</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -24439,8 +24512,8 @@
         <span class="lemma">Μακεδών</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -24452,7 +24525,7 @@
         <span class="lemma">ἐπιφαίνω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀφ᾽</span>
+        <span class="word-form">ἀφ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -24719,7 +24792,7 @@
         <span class="lemma">φύσις</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -24766,7 +24839,7 @@
         <span class="lemma">τελεσφορέω</span>
       </span>
       <span class="word">
-        <span class="word-form">καθ᾽</span>
+        <span class="word-form">καθ'</span>
         <span class="lemma">κατά</span>
         <span class="lemma">καθό</span>
         <span class="lemma">καθά</span>
@@ -25018,8 +25091,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐγγόνοις</span>
@@ -25185,7 +25258,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -25207,7 +25280,7 @@
         <span class="lemma">Ἀσίας</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -25488,8 +25561,8 @@
         <span class="lemma">μέσος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐστὶ</span>
@@ -25616,7 +25689,7 @@
         <span class="lemma">Ἕβερος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀφ᾽</span>
+        <span class="word-form">ἀφ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -26048,8 +26121,8 @@
         <span class="lemma">δεύτερος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἔτει</span>
@@ -26793,7 +26866,7 @@
         <span class="lemma">γένεσις</span>
       </span>
       <span class="word">
-        <span class="word-form">μεθ᾽</span>
+        <span class="word-form">μεθ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -26842,7 +26915,7 @@
         <span class="lemma">εἴκοσι</span>
       </span>
       <span class="word">
-        <span class="word-form">τοσαῦθ᾽</span>
+        <span class="word-form">τοσαῦθ'</span>
         <span class="lemma">τοσοῦτος</span>
       </span>
       <span class="word">
@@ -27338,7 +27411,7 @@
         <span class="lemma">μέγας</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -27529,7 +27602,7 @@
         <span class="lemma">οὐ</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -27623,7 +27696,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -27664,7 +27737,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -27680,8 +27753,8 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑστεροῦντας</span>
@@ -27696,7 +27769,7 @@
         <span class="lemma">γίγνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -27819,7 +27892,7 @@
         <span class="lemma">ἀπονέμω</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -28004,8 +28077,8 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὕτως:</span>
@@ -28253,7 +28326,7 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -28369,7 +28442,7 @@
         <span class="lemma">οὗ</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -28480,7 +28553,7 @@
         <span class="lemma">δείκνυμι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -28830,7 +28903,7 @@
         <span class="lemma">ἐκεῖνος</span>
       </span>
       <span class="word">
-        <span class="word-form">τοῦθ᾽</span>
+        <span class="word-form">τοῦθ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -28858,8 +28931,8 @@
         <span class="lemma">ὡς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἧκον</span>
@@ -29148,7 +29221,7 @@
         <span class="lemma">ἱερεύς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -29277,7 +29350,7 @@
         <span class="lemma">ἀδελφή</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -29317,7 +29390,7 @@
         <span class="lemma">βούλομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -29329,7 +29402,7 @@
         <span class="lemma">ἐνυβρίζω</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -29409,7 +29482,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -29474,7 +29547,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -29602,7 +29675,7 @@
         <span class="lemma">οὖν</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -29780,7 +29853,7 @@
         <span class="lemma">γάρ</span>
       </span>
       <span class="word">
-        <span class="word-form">ταῦτ᾽</span>
+        <span class="word-form">ταῦτ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -29829,8 +29902,8 @@
         <span class="lemma">ΑΒΓ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰς</span>
@@ -29961,8 +30034,8 @@
         <span class="lemma">λαμβάνω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸς</span>
@@ -29974,7 +30047,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -30194,7 +30267,7 @@
     </section>
     <section class="sc-level-3">
       <span class="word">
-        <span class="word-form">Κατ᾽</span>
+        <span class="word-form">Κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -30355,8 +30428,8 @@
         <span class="lemma">μοῖρα</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἦρχον</span>
@@ -30424,8 +30497,8 @@
         <span class="lemma">στρατηγός</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἑκάστοις</span>
@@ -30578,7 +30651,7 @@
         <span class="lemma">Ἀσσύριος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -30716,7 +30789,7 @@
         <span class="lemma">ἀσφαλτόω</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -30848,7 +30921,7 @@
         <span class="lemma">αὖθις</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -31105,7 +31178,7 @@
         <span class="lemma">ἀναμένω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -31242,7 +31315,7 @@
         <span class="lemma">ἀποκτείνω</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -31294,8 +31367,8 @@
         <span class="lemma">μάχομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπὸ</span>
@@ -32086,8 +32159,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἀνθρώπους</span>
@@ -32155,7 +32228,7 @@
         <span class="lemma">ποιέω</span>
       </span>
       <span class="word">
-        <span class="word-form">οὐδ᾿</span>
+        <span class="word-form">οὐδ'</span>
         <span class="lemma">οὐδέ</span>
       </span>
       <span class="word">
@@ -32275,8 +32348,8 @@
         <span class="lemma">σχάζω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὁ</span>
@@ -32335,7 +32408,7 @@
         <span class="lemma">θεός</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -32393,8 +32466,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπολαβόντος</span>
@@ -32457,7 +32530,7 @@
         <span class="lemma">διαδείκνυμι</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -32572,7 +32645,7 @@
         <span class="lemma">μέν</span>
       </span>
       <span class="word">
-        <span class="word-form">ταῦτ᾽</span>
+        <span class="word-form">ταῦτ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -32604,7 +32677,7 @@
         <span class="lemma">κελεύω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -33098,7 +33171,7 @@
         <span class="lemma">ὡς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -33283,7 +33356,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -33658,7 +33731,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -33783,8 +33856,8 @@
         <span class="lemma">ἔνατος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
@@ -33849,8 +33922,8 @@
         <span class="lemma">κελεύω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸν</span>
@@ -33881,7 +33954,7 @@
         <span class="lemma">μέγας</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -33960,7 +34033,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -34213,7 +34286,7 @@
         <span class="lemma">οὗ</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -34243,7 +34316,7 @@
         <span class="lemma">οὗ</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -34413,7 +34486,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -34737,7 +34810,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -34903,7 +34976,7 @@
         <span class="lemma">ποῖ</span>
       </span>
       <span class="word">
-        <span class="word-form">ποτ᾽</span>
+        <span class="word-form">ποτ'</span>
         <span class="lemma">ποτε</span>
         <span class="lemma">πρός</span>
       </span>
@@ -34922,8 +34995,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰπόντος</span>
@@ -35062,8 +35135,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἀνδρὸς</span>
@@ -35086,7 +35159,7 @@
         <span class="lemma">λανθάνω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -35182,8 +35255,8 @@
     </section>
     <section class="sc-level-3">
       <span class="word">
-        <span class="word-form">αῦτ᾽</span>
-        <span class="lemma">αῦτ᾽</span>
+        <span class="word-form">αῦτ'</span>
+        <span class="lemma">αῦτ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἀκούσας</span>
@@ -35634,7 +35707,7 @@
         <span class="lemma">χωρέω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -35652,7 +35725,7 @@
         <span class="lemma">ξένος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -35669,7 +35742,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -35740,7 +35813,7 @@
         <span class="lemma">παρέχω</span>
       </span>
       <span class="word">
-        <span class="word-form">οὐδ᾿</span>
+        <span class="word-form">οὐδ'</span>
         <span class="lemma">οὐδέ</span>
       </span>
       <span class="word">
@@ -36257,8 +36330,8 @@
         <span class="lemma">ἱστορέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτήν,</span>
@@ -36289,8 +36362,8 @@
         <span class="lemma">διαφεύγω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸς</span>
@@ -36576,8 +36649,8 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἄν</span>
@@ -36602,8 +36675,8 @@
         <span class="lemma">ἅμμα</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἡ</span>
@@ -36647,8 +36720,8 @@
         <span class="lemma">κτίζω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῶν</span>
@@ -37160,8 +37233,8 @@
         <span class="lemma">νόμος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
@@ -37425,7 +37498,7 @@
         <span class="lemma">ἔλεγος</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -37537,7 +37610,7 @@
         <span class="lemma">ποιέω</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -37624,7 +37697,7 @@
         <span class="lemma">ἀφικνέομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">ταῦτ᾽</span>
+        <span class="word-form">ταῦτ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -37767,8 +37840,8 @@
         <span class="lemma">προθυμέομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτοῦ</span>
@@ -37800,7 +37873,7 @@
         <span class="lemma">ἔχω</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -37925,7 +37998,7 @@
         <span class="lemma">φρέαρ</span>
       </span>
       <span class="word">
-        <span class="word-form">λέγοιτ᾽</span>
+        <span class="word-form">λέγοιτ'</span>
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
@@ -37939,8 +38012,8 @@
         <span class="lemma">οὕτως</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἔτι</span>
@@ -37986,7 +38059,7 @@
         <span class="lemma">Ἅβραμος</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -38231,7 +38304,7 @@
         <span class="lemma">εὐθύς</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -38552,8 +38625,8 @@
         <span class="lemma">τίκτω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴ</span>
@@ -38869,7 +38942,7 @@
         <span class="lemma">μήπω</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -38946,8 +39019,8 @@
         <span class="lemma">ὡς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἀπιοῦσαν</span>
@@ -38995,7 +39068,7 @@
         <span class="lemma">σπανίζω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -39062,8 +39135,8 @@
         <span class="lemma">συντυγχάνω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῇ</span>
@@ -39168,8 +39241,8 @@
         <span class="lemma">ὁ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐθάρσησε</span>
@@ -39393,7 +39466,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -39492,7 +39565,7 @@
         <span class="lemma">φυλή</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -40211,8 +40284,8 @@
         <span class="lemma">ἅπας</span>
       </span>
       <span class="word">
-        <span class="word-form">θ᾽</span>
-        <span class="lemma">θ᾽</span>
+        <span class="word-form">θ'</span>
+        <span class="lemma">θ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπουργεῖν</span>
@@ -40611,7 +40684,7 @@
         <span class="lemma">ὄρος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -40708,8 +40781,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">Ἰσάκου</span>
@@ -40872,7 +40945,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -40939,8 +41012,8 @@
         <span class="lemma">ΑΒΓ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὁ</span>
@@ -41116,11 +41189,11 @@
         <span class="lemma">φιλοτιμέομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">οὐδ᾿</span>
+        <span class="word-form">οὐδ'</span>
         <span class="lemma">οὐδέ</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -41153,8 +41226,8 @@
         <span class="lemma">σός</span>
       </span>
       <span class="word">
-        <span class="word-form">τ᾽</span>
-        <span class="lemma">τ᾽</span>
+        <span class="word-form">τ'</span>
+        <span class="lemma">τ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἴδοιμι</span>
@@ -41200,7 +41273,7 @@
         <span class="lemma">καταλείπω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -41304,7 +41377,7 @@
         <span class="lemma">ἀξιόω</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -41321,7 +41394,7 @@
         <span class="lemma">τιμή</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀνθ᾽</span>
+        <span class="word-form">ἀνθ'</span>
         <span class="lemma">ἀντί</span>
       </span>
       <span class="word">
@@ -41365,8 +41438,8 @@
         <span class="lemma">ἐπεί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐγεννήθης</span>
@@ -41408,7 +41481,7 @@
         <span class="lemma">τρόπος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -41548,7 +41621,7 @@
         <span class="lemma">βιόω</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -41595,7 +41668,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -41612,8 +41685,8 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">τ᾽</span>
-        <span class="lemma">τ᾽</span>
+        <span class="word-form">τ'</span>
+        <span class="lemma">τ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐμοὶ</span>
@@ -42512,7 +42585,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -42597,7 +42670,7 @@
         <span class="lemma">εὐδαίμων</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -42701,8 +42774,8 @@
         <span class="lemma">θάπτω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -42792,7 +42865,7 @@
         <span class="lemma">τετρακόσιοι</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -42869,8 +42942,8 @@
         <span class="lemma">γαμέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸς</span>
@@ -43675,7 +43748,7 @@
         <span class="lemma">σόφισμα</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀφ᾽</span>
+        <span class="word-form">ἀφ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -43946,7 +44019,7 @@
         <span class="lemma">τίη</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -44029,8 +44102,8 @@
         <span class="lemma">θέρος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑπὸ</span>
@@ -44160,7 +44233,7 @@
         <span class="lemma">πολύς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -44424,8 +44497,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐκτρεπομένων</span>
@@ -44448,7 +44521,7 @@
         <span class="lemma">κομίζω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -44472,7 +44545,7 @@
         <span class="lemma">γάρ</span>
       </span>
       <span class="word">
-        <span class="word-form">οὐδ᾿</span>
+        <span class="word-form">οὐδ'</span>
         <span class="lemma">οὐδέ</span>
       </span>
       <span class="word">
@@ -44573,7 +44646,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">μηδ᾿</span>
+        <span class="word-form">μηδ'</span>
         <span class="lemma">μηδέ</span>
       </span>
       <span class="word">
@@ -44704,7 +44777,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -44945,7 +45018,7 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -45273,7 +45346,7 @@
         <span class="lemma">τε</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -45809,8 +45882,8 @@
         <span class="lemma">συγγενής</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὑμέτερος:</span>
@@ -46445,7 +46518,7 @@
         <span class="lemma">πέμπω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -46566,7 +46639,7 @@
         <span class="lemma">Ἅβραμος</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -46822,8 +46895,8 @@
         <span class="lemma">φράζω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
@@ -46912,15 +46985,15 @@
         <span class="lemma">τίκτω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
         <span class="lemma">αὐτός</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -47078,7 +47151,7 @@
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -47252,8 +47325,8 @@
         <span class="lemma">ὑποδέχομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸν</span>
@@ -47328,7 +47401,7 @@
         <span class="lemma">χράομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -47542,8 +47615,8 @@
         <span class="lemma">ὀρύσσω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
@@ -47813,8 +47886,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἕτερον</span>
@@ -47893,7 +47966,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -47948,7 +48021,7 @@
         <span class="lemma">γίγνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -48392,7 +48465,7 @@
         <span class="lemma">Ἴσακος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -48430,7 +48503,7 @@
         <span class="lemma">αὐτός</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -49036,7 +49109,7 @@
         <span class="lemma">πᾶς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -49052,8 +49125,8 @@
         <span class="lemma">ἐπεί</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εὐτρεπὲς</span>
@@ -49154,7 +49227,7 @@
         <span class="lemma">ἄλλος</span>
       </span>
       <span class="word">
-        <span class="word-form">πάντ᾽</span>
+        <span class="word-form">πάντ'</span>
         <span class="lemma">πᾶς</span>
       </span>
       <span class="word">
@@ -49662,7 +49735,7 @@
         <span class="lemma">εἰμί</span>
       </span>
       <span class="word">
-        <span class="word-form">ταῦτ᾽</span>
+        <span class="word-form">ταῦτ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -49711,7 +49784,7 @@
         <span class="lemma">ἀσθένεια</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -49836,8 +49909,8 @@
         <span class="lemma">ποιέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸν</span>
@@ -50225,7 +50298,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -50238,7 +50311,7 @@
         <span class="lemma">δόξα</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -50256,7 +50329,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀπ᾽</span>
+        <span class="word-form">ἀπ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -50726,7 +50799,7 @@
         <span class="lemma">μῖσος</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -50771,7 +50844,7 @@
         <span class="lemma">λίθος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -50860,7 +50933,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -51041,7 +51114,7 @@
         <span class="lemma">προσίημι</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -51292,7 +51365,7 @@
         <span class="lemma">γάμος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -51480,7 +51553,7 @@
         <span class="lemma">μηδείς</span>
       </span>
       <span class="word">
-        <span class="word-form">μήτ᾽</span>
+        <span class="word-form">μήτ'</span>
         <span class="lemma">μήτε</span>
       </span>
       <span class="word">
@@ -51678,7 +51751,7 @@
         <span class="lemma">ἀγαθός</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -51710,7 +51783,7 @@
         <span class="lemma">θύω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -52030,7 +52103,7 @@
         <span class="lemma">τις</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -52195,8 +52268,8 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῶν</span>
@@ -52502,7 +52575,7 @@
         <span class="lemma">εὔνοια</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -52586,7 +52659,7 @@
         <span class="lemma">φημί</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -52806,7 +52879,7 @@
         <span class="lemma">νέος</span>
       </span>
       <span class="word">
-        <span class="word-form">τοῦθ᾽</span>
+        <span class="word-form">τοῦθ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -52910,8 +52983,8 @@
         <span class="lemma">ἀνεψιός</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐσμὲν</span>
@@ -53285,8 +53358,8 @@
         <span class="lemma">φαίνω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτῷ</span>
@@ -53396,8 +53469,8 @@
     </section>
     <section class="sc-level-3">
       <span class="word">
-        <span class="word-form">αῦτ᾽</span>
-        <span class="lemma">αῦτ᾽</span>
+        <span class="word-form">αῦτ'</span>
+        <span class="lemma">αῦτ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰποῦσα</span>
@@ -53538,7 +53611,7 @@
         <span class="lemma">μέν</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -53588,8 +53661,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αἰτίαν</span>
@@ -53597,7 +53670,7 @@
         <span class="lemma">αἴτιος</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -53647,7 +53720,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -53987,7 +54060,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -54363,7 +54436,7 @@
         <span class="lemma">μένω</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -54460,7 +54533,7 @@
         <span class="lemma">ἀξία</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -54635,7 +54708,7 @@
         <span class="lemma">μέντοι</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -54748,8 +54821,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">Ἰακώβου</span>
@@ -54913,8 +54986,8 @@
         <span class="lemma">νύξ</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐπιγενομένης</span>
@@ -55004,8 +55077,8 @@
         <span class="lemma">συνέρχομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐκεῖνος</span>
@@ -55032,7 +55105,7 @@
         <span class="lemma">εἶτα</span>
       </span>
       <span class="word">
-        <span class="word-form">μεθ᾽</span>
+        <span class="word-form">μεθ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -55082,7 +55155,7 @@
         <span class="lemma">ἀνάγκη</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -55135,11 +55208,11 @@
         <span class="lemma">παρέχω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -55164,8 +55237,8 @@
         <span class="lemma">μέντοι</span>
       </span>
       <span class="word">
-        <span class="word-form">γ᾽</span>
-        <span class="lemma">γ᾽</span>
+        <span class="word-form">γ'</span>
+        <span class="lemma">γ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὐδὲν</span>
@@ -55193,7 +55266,7 @@
         <span class="lemma">γάμος</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀλλ᾽</span>
+        <span class="word-form">ἀλλ'</span>
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
@@ -55209,7 +55282,7 @@
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -55225,8 +55298,8 @@
         <span class="lemma">πείθω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὁ</span>
@@ -55314,8 +55387,8 @@
         <span class="lemma">σαββάτωσις</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἑκατέραις</span>
@@ -55555,7 +55628,7 @@
         <span class="lemma">διότι</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -55702,7 +55775,7 @@
         <span class="lemma">βεβαιωτής</span>
       </span>
       <span class="word">
-        <span class="word-form">μεθ᾽</span>
+        <span class="word-form">μεθ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -55881,7 +55954,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -55941,8 +56014,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸ</span>
@@ -56068,7 +56141,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">μετ᾽</span>
+        <span class="word-form">μετ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -56084,7 +56157,7 @@
         <span class="lemma">μακαριστής</span>
       </span>
       <span class="word">
-        <span class="word-form">λέγοιτ᾽</span>
+        <span class="word-form">λέγοιτ'</span>
         <span class="lemma">λέγω</span>
       </span>
       <span class="word">
@@ -56185,7 +56258,7 @@
         <span class="lemma">μεταδίδωμι</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -56213,8 +56286,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">οὐ</span>
@@ -56229,8 +56302,8 @@
         <span class="lemma">ἀρκέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -56329,7 +56402,7 @@
         <span class="lemma">κοιμάω</span>
       </span>
       <span class="word">
-        <span class="word-form">παρ᾽</span>
+        <span class="word-form">παρ'</span>
         <span class="lemma">παρά</span>
       </span>
       <span class="word">
@@ -56337,7 +56410,7 @@
         <span class="lemma">αὐτός</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -56498,8 +56571,8 @@
         <span class="lemma">χρόνος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὕστερον</span>
@@ -56567,8 +56640,8 @@
         <span class="lemma">ἔτος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐστὶν</span>
@@ -56603,8 +56676,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἠξίου</span>
@@ -56718,8 +56791,8 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐχουσῶν</span>
@@ -57005,8 +57078,8 @@
         <span class="lemma">ἵνα</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">εἰ</span>
@@ -57069,7 +57142,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">μεθ᾽</span>
+        <span class="word-form">μεθ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -57124,7 +57197,7 @@
         <span class="lemma">ἐλαύνω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -57148,7 +57221,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">καθ᾽</span>
+        <span class="word-form">καθ'</span>
         <span class="lemma">κατά</span>
         <span class="lemma">καθό</span>
         <span class="lemma">καθά</span>
@@ -57398,7 +57471,7 @@
         <span class="lemma">γίγνομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">μεθ᾽</span>
+        <span class="word-form">μεθ'</span>
         <span class="lemma">μετά</span>
       </span>
       <span class="word">
@@ -57849,7 +57922,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -58172,7 +58245,7 @@
         <span class="lemma">εὑρίσκω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -58227,7 +58300,7 @@
         <span class="lemma">φυλάσσω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑφ᾽</span>
+        <span class="word-form">ὑφ'</span>
         <span class="lemma">ὑπό</span>
         <span class="lemma">ὑφή</span>
       </span>
@@ -58341,7 +58414,7 @@
         <span class="lemma">μή</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -58365,7 +58438,7 @@
         <span class="lemma">ἀλλά</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -58623,7 +58696,7 @@
         <span class="lemma">γάμος</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">
@@ -58811,7 +58884,7 @@
         <span class="lemma">παρέχω</span>
       </span>
       <span class="word">
-        <span class="word-form">ἔσθ᾽</span>
+        <span class="word-form">ἔσθ'</span>
         <span class="lemma">εἰμί</span>
         <span class="lemma">ἐσθίω</span>
         <span class="lemma">ἔστε</span>
@@ -58849,8 +58922,8 @@
         <span class="lemma">ποτε</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὖ</span>
@@ -58889,7 +58962,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -59277,8 +59350,8 @@
         <span class="lemma">ποιέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ὅρκους</span>
@@ -59382,7 +59455,7 @@
         <span class="lemma">τις</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐφ᾽</span>
+        <span class="word-form">ἐφ'</span>
         <span class="lemma">ἐπί</span>
       </span>
       <span class="word">
@@ -59427,7 +59500,7 @@
         <span class="lemma">βουνός</span>
       </span>
       <span class="word">
-        <span class="word-form">ἀφ᾽</span>
+        <span class="word-form">ἀφ'</span>
         <span class="lemma">ἀπό</span>
       </span>
       <span class="word">
@@ -61009,7 +61082,7 @@
         <span class="lemma">φάντασμα</span>
       </span>
       <span class="word">
-        <span class="word-form">ταῦτ᾽</span>
+        <span class="word-form">ταῦτ'</span>
         <span class="lemma">οὗτος</span>
       </span>
       <span class="word">
@@ -61155,7 +61228,7 @@
         <span class="lemma">καί</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -61184,8 +61257,8 @@
         <span class="lemma">πλησίος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἤδη</span>
@@ -61227,7 +61300,7 @@
         <span class="lemma">ἑκάτερος</span>
       </span>
       <span class="word">
-        <span class="word-form">κατ᾽</span>
+        <span class="word-form">κατ'</span>
         <span class="lemma">κατά</span>
       </span>
       <span class="word">
@@ -61303,8 +61376,8 @@
         <span class="lemma">προσκυνέω</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὸς</span>
@@ -61626,8 +61699,8 @@
         <span class="lemma">Χαναναῖος</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐστὶν</span>
@@ -61732,8 +61805,8 @@
         <span class="lemma">θεάομαι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">αὐτὴν</span>
@@ -61770,7 +61843,7 @@
         <span class="lemma">φθείρω</span>
       </span>
       <span class="word">
-        <span class="word-form">δι᾽</span>
+        <span class="word-form">δι'</span>
         <span class="lemma">διά</span>
         <span class="lemma">διό</span>
       </span>
@@ -61908,7 +61981,7 @@
         <span class="lemma">δέ</span>
       </span>
       <span class="word">
-        <span class="word-form">οὔτ᾽</span>
+        <span class="word-form">οὔτ'</span>
         <span class="lemma">οὔτε</span>
       </span>
       <span class="word">
@@ -62907,7 +62980,7 @@
         <span class="lemma">ὅς</span>
       </span>
       <span class="word">
-        <span class="word-form">ἐπ᾽</span>
+        <span class="word-form">ἐπ'</span>
         <span class="lemma">ἐπάρχω</span>
       </span>
       <span class="word">
@@ -63087,8 +63160,8 @@
         <span class="lemma">πάρειμι</span>
       </span>
       <span class="word">
-        <span class="word-form">δ᾿</span>
-        <span class="lemma">δ᾿</span>
+        <span class="word-form">δ'</span>
+        <span class="lemma">δ'</span>
       </span>
       <span class="word">
         <span class="word-form">ἐντεῦθεν</span>
@@ -63352,7 +63425,7 @@
         <span class="lemma">ἀξιόω</span>
       </span>
       <span class="word">
-        <span class="word-form">ὑπ᾽</span>
+        <span class="word-form">ὑπ'</span>
         <span class="lemma">ὑποτίτθιος</span>
       </span>
       <span class="word">

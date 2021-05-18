@@ -3,20 +3,8 @@ document.addEventListener("DOMContentLoaded", (e) => {
     // Initialize I/O
     API.init();
 
-    $('#current-text').change(function() {
-        const v = $(this).val();
-        if (!v) {
-            return;
-        }
-        API.getText(v);
-    });
-
-    API.getTexts();
-
-    $('body').on('dblclick', '.word-form', function() {
-        const me = $(this);
-        let form = me.text().toLowerCase().trim();
-    });
+    // Initialize Reader
+    Reader.refresh();
 
     Loader.hide();
 });
@@ -70,48 +58,6 @@ const API = ((api) => {
             API.submit({form: form, message: msg});
         });
     }
-
-    api.getTexts = () => {
-        Loader.show('texts');
-        $.ajax({
-            url: 'api/texts',
-            type: 'GET',
-            contentType: false,
-            processData: false
-        })
-        .done((data, status, jqXHR) => {
-            const t = data.texts;
-
-            const texts = $('#current-text').empty();
-            texts.append('<option value="">&lt;Select a Document&gt;</option>');
-            for (const txt of t) {
-                texts.append('<option value="' + txt.value + '">' + txt.label + '</option>');
-            }
-            texts.val(t[0].value).change();
-            Loader.hide('texts');
-        })
-        .fail((jqXHR, status, error) => {
-            Loader.hide('texts');
-        });
-    };
-
-    api.getText = (name) => {
-        Loader.show('text');
-        $.ajax({
-            url: 'api/text?name=' + name,
-            type: 'GET',
-            contentType: false,
-            processData: false
-        })
-        .done((data, status, jqXHR) => {
-            $('#reading-page').html(data.content || '');
-            Loader.hide('text');
-        })
-        .fail((jqXHR, status, error) => {
-            $('#reading-page').html('Unable to load ' + name);
-            Loader.hide('text');
-        });
-    };
 
     api.submit = (opts) => {
         if (opts.link) {
@@ -291,3 +237,246 @@ const API = ((api) => {
     return api;
 })(window.API || {});
 
+
+const Router = ((router) => {
+    router.currentRoute = () => {
+        const path = window.location.pathname;
+        return path.split('/').filter(x => x.trim() != '');
+    };
+
+    router.goTo = (path, html, pageTitle) => {
+        const s = {};
+        if (html) {
+            s.html = html;
+        }
+        if (pageTitle) {
+            s.pageTitle = pageTitle;
+        }
+        window.history.pushState(
+            s, '', window.location.origin + '/' + path
+        );
+        Reader.refresh();
+    };
+
+    $(() => {
+        $(window).on('popstate', () => {
+            if (window.location.hash) {
+                return;
+            }
+            Reader.refresh();
+        });
+    });
+
+    return router;
+})(window.Router || {});
+
+
+const Reader = ((reader) => {
+    const currentTextSelect = $('#current-text');
+    const currentVolSelect = $('#current-volume');
+    const readingPage = $('#reading-page');
+
+    let currentText = {};
+    let currentVolume = {};
+
+    reader.refresh = () => {
+        loadTexts().done((texts) => reader.setTextOpts(texts));
+    }
+
+    const loadTexts = () => {
+        Loader.show('texts');
+        const loading = $.Deferred();
+
+        $.ajax({
+            url: '/api/text',
+            type: 'GET',
+            contentType: false,
+            processData: false
+        })
+        .done((data, status, jqXHR) => {
+            loading.resolve(data.texts);
+            Loader.hide('texts');
+        })
+        .fail((jqXHR, status, error) => {
+            loading.reject(jqXHR, status, error);
+            Loader.hide('texts');
+        });
+
+        return loading.promise();
+    };
+    reader.setTextOpts = (texts) => {
+        const route = Router.currentRoute();
+        const currentVal = route[0] || '';
+
+        currentTextSelect.empty()
+            .append('<option value="">&lt;Select a Document&gt;</option>');
+        for (const txt of texts) {
+            const o = $('<option />')
+                .attr({
+                    'value': txt.id
+                })
+                .text(txt.name + ' (' + txt.language.name + ')')
+                .appendTo(currentTextSelect);
+            if (txt.id == currentVal) {
+                o.attr('selected', 'selected');
+            }
+        }
+        currentTextSelect.val(currentVal);
+        if (currentVal) {
+            loadText(currentVal);
+        }
+    };
+
+    const loadText = (id) => {
+        Loader.show('text');
+        const loading = $.Deferred();
+
+        $.ajax({
+            url: '/api/text/' + parseInt(id),
+            type: 'GET',
+            contentType: false,
+            processData: false
+        })
+        .done((data, status, jqXHR) => {
+            reader.setText(data.text);
+            Loader.hide('text');
+        })
+        .fail((jqXHR, status, error) => {
+            loading.reject(jqXHR, status, error);
+            Loader.hide('text');
+        });
+
+        return loading.promise();
+    };
+    reader.setText = (text) => {
+        currentText = text;
+
+        const route = Router.currentRoute();
+        const currentVol = route[1] || '';
+
+        currentVolSelect.empty()
+            .closest('div').toggle(text.volumes.length > 1);
+        for (const vol of text.volumes) {
+            const o = $('<option />')
+                .attr({
+                    'value': vol.id,
+                    'data-url': vol.file_url
+                })
+                .text(vol.name)
+                .appendTo(currentVolSelect);
+            if (vol.id == currentVol) {
+                o.attr('selected', 'selected');
+            }
+        }
+        if (!currentVol && text.volumes.length) {
+            loadVolume(text.volumes[0].id);
+        }
+        else if (currentVol) {
+            loadVolume(currentVol);
+        }
+    };
+
+    const loadVolume = (id) => {
+        Loader.show('volume');
+        const loading = $.Deferred();
+
+        $.ajax({
+            url: '/api/volume/' + parseInt(id),
+            type: 'GET',
+            contentType: false,
+            processData: false
+        })
+        .done((data, status, jqXHR) => {
+            reader.setVolume(data.volume);
+            Loader.hide('volume');
+        })
+        .fail((jqXHR, status, error) => {
+            loading.reject(jqXHR, status, error);
+            Loader.hide('volume');
+        });
+
+        return loading.promise();
+    };
+    reader.setVolume = (vol) => {
+        currentVolume = vol;
+
+        loadContent(vol.file_url).done((xml) => reader.setContent(xml));
+    };
+
+    const loadContent = (url) => {
+        if (url.indexOf('http') != 0) {
+            if (url.indexOf('/static/data') != 0) {
+                url = '/static/data/' + url;
+            }
+        }
+        Loader.show('content');
+        const loading = $.Deferred();
+
+        $.ajax({
+            url: url,
+            type: 'GET',
+            contentType: false,
+            processData: false
+        })
+        .done((data, status, jqXHR) => {
+            loading.resolve(data.documentElement || {});
+            Loader.hide('content');
+        })
+        .fail((jqXHR, status, error) => {
+            loading.reject(jqXHR, status, error);
+            Loader.hide('content');
+        });
+
+        return loading.promise();
+    };
+    reader.setContent = (xml) => {
+        readingPage.html(xml.outerHTML || '');
+    };
+
+    currentTextSelect.change((e) => {
+        const v = e.target.value;
+        if (!v || v == currentText.id) {
+            return;
+        }
+        Router.goTo(v);
+    });
+    currentVolSelect.change((e) => {
+        const v = e.target.value;
+        if (!v || v == currentVolume.id) {
+            return;
+        }
+        Router.goTo(currentText.id + '/' + v);
+    });
+
+    $('body').on('dblclick', '.word-form', function() {
+        const me = $(this);
+        let form = me.text().toLowerCase().trim();
+
+        const lemma = me.siblings('.lemma');
+        if (!lemma.length) {
+            return;
+        }
+        const lem = [];
+        for (const el of lemma) {
+            lem.push(el.innerText);
+        }
+
+        const gls = [];
+        const contextGloss = me.siblings('.gloss');
+        if (contextGloss.length) {
+            gls.push(contextGloss.text());
+        }
+        else {
+            // TODO; use glossing API
+        }
+
+        Alerts.popup({
+            header: lem.join('; '),
+            message: '<ul><li>' + gls.join('</li><li>') + '</li></ul>',
+            type: 'light',
+            // autohide: false
+        });
+    });
+
+    return reader;
+})(window.Reader || {});

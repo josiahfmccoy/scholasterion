@@ -24,7 +24,10 @@ def run_flask(name, runner, port, expose=False):
 
 
 def run_webapp():
-    return run_flask('WebApp', 'run_webapp', 5000)
+    return run_flask(
+        'WebApp', 'run_webapp', os.getenv('APP_PORT', 5000),
+        expose=os.getenv('EXPOSE_APP', False)
+    )
 
 
 def wait_for_output(subproc, timeout=2):

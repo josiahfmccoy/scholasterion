@@ -2,8 +2,9 @@
 <footer class="container pb-5">
     <hr class="my-4">
 
-    <div class="float-end">
-        <p>&copy; {{ now.year }} Josiah McCoy</p>
+    <div class="float-end text-end">
+        <p class="mb-0">Scholasterion &copy; {{ now.year }} Josiah McCoy</p>
+        <p>All texts are public domain</p>
     </div>
 
     {% if current_user and current_user.has_role('superuser') %}

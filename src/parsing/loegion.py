@@ -1,5 +1,7 @@
+import json
 import re
 import requests
+import time
 from .base import Parser
 try:
     from ..utils import *
@@ -21,8 +23,13 @@ class LoegionParser(Parser):
         n = self.accent_map.get(n, n)
         while True:
             try:
-                r = requests.get(f'{self.base_url}/wordwheel/{n}').json()
+                r = requests.get(f'{self.base_url}/wordwheel/{n}')
+                r = r.json()
                 break
+            except json.JSONDecodeError:
+                print(r)
+                print(r.text)
+                raise
             except requests.exceptions.ConnectionError:
                 time.sleep(10)
 

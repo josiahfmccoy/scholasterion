@@ -1,38 +1,45 @@
 import argparse
+import json
+import os
 import time
 from parsing.loegion import LoegionParser
-from lxml import etree
 from utils import *
+
+
+def parse_loegion(filename, outpath=None, logger=None):
+    outname = outpath or os.path.dirname(filename)
+    if outname.endswith('formatted') or outname.endswith('processed'):
+        outname = os.path.dirname(outname)
+    outname = os.path.join(outname, 'parsings', os.path.basename(filename))
+
+    if not outname.endswith('.xml'):
+        if '.' in outname:
+            outname = outname.rsplit('.', 1)[0]
+        outname += '.xml'
+
+    if os.path.isfile(outname):
+        raise AssertionError('File exists!')
+
+    logger = logger or make_logger('parser')
+    parser = LoegionParser(logger=logger)
+    parsed_data = parser.parse_file(filename)
+
+    lem_file = outname.rsplit('.', 1)[0] + '-lemmas.json'
+    with open(lem_file, 'w', encoding='utf-8') as f:
+        json.dump(parsed_data['lemma_mapping'], f, ensure_ascii=False)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', '--filename')
-    parser.add_argument('-o', '--outname', default=None)
+    parser.add_argument('-o', '--outpath', default=None)
     parser.add_argument('-v', '--verbose', action='store_true', default=False)
     args = parser.parse_args()
 
-    logger = make_logger('scraper', level=('debug' if args.verbose else 'info'))
+    logger = make_logger('parser', level=('debug' if args.verbose else 'info'))
 
     start = time.time()
-
-    if args.filename.endswith('.xml'):
-        parser = etree.XMLParser(remove_blank_text=True)
-        text = etree.parse(args.filename, parser)
-    else:
-        with open(args.filename, 'r', encoding='utf-8') as f:
-            text = '\n'.join(f.readlines()).strip()
-
-    parser = LoegionParser(logger=logger)
-    tree = parser.parse_text(text)
-
+    parse_loegion(args.filename, outpath=args.outpath, logger=logger)
     end = time.time()
-    fname = args.outname or args.filename
-    if not fname.endswith('.xml'):
-        if '.' in fname:
-            fname = fname.rsplit('.', 1)[0]
-        fname += '.xml'
-    with open(fname, 'wb') as f:
-        f.write(etree.tostring(tree, encoding='utf-8', pretty_print=True))
 
     logger.info(f'Ran in {end - start} s')

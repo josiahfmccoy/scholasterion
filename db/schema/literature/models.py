@@ -29,6 +29,7 @@ class Text(Model):
 
 
 class Volume(Model):
+    order = sa.Column(sa.Integer(), nullable=False)
     name = sa.Column(sa.Unicode(), nullable=False)
     file_url = sa.Column(sa.Unicode(), nullable=False, unique=True)
 

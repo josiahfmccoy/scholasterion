@@ -448,8 +448,15 @@ const Reader = ((reader) => {
         Router.goTo(currentText.id + '/' + v);
     });
 
-    $('body').on('dblclick', '.word-form', function() {
-        const me = $(this);
+    $('body').on('keyup', (e) => {
+        if (e.key === 'Escape') {
+            $('.popover').popover('dispose');
+        }
+    });
+    $('body').on('dblclick', '.word-form', (e) => {
+        e.preventDefault();
+
+        const me = $(e.target);
         let form = me.text().toLowerCase().trim();
 
         const lemma = me.siblings('.lemma');
@@ -470,12 +477,26 @@ const Reader = ((reader) => {
             // TODO; use glossing API
         }
 
-        Alerts.popup({
-            header: lem.join('; '),
-            message: '<ul><li>' + gls.join('</li><li>') + '</li></ul>',
-            type: 'light',
-            // autohide: false
+        Alerts.popover(e.target, {
+            title: lem.join('; '),
+            content: gls.join('</ br>'),
+            html: true,
+            placement: 'left'
         });
+
+        // Alerts.tooltip(e.target, {
+        //     header: lem.join('; '),
+        //     title: gls.join('; ') || '...',
+        //     html: true,
+        //     trigger: 'manual'
+        // });
+
+        // Alerts.popup({
+        //     header: lem.join('; '),
+        //     message: '<ul><li>' + gls.join('</li><li>') + '</li></ul>',
+        //     type: 'light',
+        //     // autohide: false
+        // });
     });
 
     return reader;

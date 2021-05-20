@@ -23,9 +23,30 @@ class WebScraper:
         if logger is None:
             logger = make_logger(self.__class__.__name__)
         self.logger = logger
+        self._last_text = None
 
     def init_session(self):
         return True
 
     def load_text(self, *args, **kwargs):
+        text = self._load(*args, **kwargs)
+        self._last_text = text
+        return text
+
+    def _load(self, *args, **kwargs):
         raise NotImplementedError()
+
+    def save(self, filepath):
+        if not self._last_text:
+            return
+
+        fname = filepath
+        if not fname.endswith('.txt'):
+            if '.' in fname:
+                fname = fname.rsplit('.', 1)[0]
+            fname += '.txt'
+
+        if os.path.isfile(fname):
+            raise IOError('File exists!')
+        with open(fname, 'w', encoding='utf-8') as f:
+            f.writelines([self._last_text])

@@ -9,6 +9,7 @@ __all__ = [
 
 class Word(Model):
     form = sa.Column(sa.Unicode(), nullable=False)
+    parsing = sa.Column(sa.Unicode(255), nullable=True)
 
     lexeme_id = sa.Column(
         sa.Integer(), sa.ForeignKey('lexeme.id'), nullable=True

@@ -58,7 +58,49 @@ const Alerts = ((alerts) => {
         }
 
         (new bootstrap.Toast(toast[0])).show();
-    }
+    };
+
+    alerts.popover = (element, opts) => {
+        const p = new bootstrap.Popover(element, opts);
+        p.show();
+
+        const btn = $('<button type="button" aria-label="Close" />')
+            .attr({
+                'data-bs-dismiss': 'popover'
+            })
+            .addClass('btn-close btn-sm p-0 ms-2');
+        $(p.tip).find('.popover-header').append(btn);
+    };
+    $('body').on('click', '[data-bs-dismiss="popover"]', (e) => {
+        e.preventDefault();
+        $(e.target).closest('.popover').popover('dispose');
+    });
+
+    alerts.tooltip = (element, opts) => {
+        const t = new bootstrap.Tooltip(element, opts);
+        t.show();
+
+        const tip = $(t.tip).find('.tooltip-inner');
+        tip.addClass('text-white px-4 py-2').css({
+            'font-size': '2em'
+        });
+        if (opts.header) {
+            tip.prepend('<strong class="me-2">' + opts.header + '</strong>');
+        }
+        
+        const btn = $('<button type="button" aria-label="Close" />')
+            .attr({
+                'data-bs-dismiss': 'tooltip',
+                'style': 'font-size: 0.8em;'
+            })
+            .addClass('btn-close btn-close-white p-0 ms-2');
+
+        tip.append(btn);
+    };
+    $('body').on('click', '[data-bs-dismiss="tooltip"]', (e) => {
+        e.preventDefault();
+        $(e.target).closest('.tooltip').tooltip('dispose');
+    });
 
     return alerts;
 })(window.Alerts || {});

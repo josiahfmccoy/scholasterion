@@ -45,7 +45,7 @@ class PerseusCtsClient(WebScraper):
                         return metadata
         return None
 
-    def load_text(self, urn, excerpt=None, filename=None):
+    def _load(self, urn, excerpt=None, filename=None):
         metadata = self.load_metadata(urn)
         if metadata is None:
             raise ValueError(f'No text exists with URN {urn}')
@@ -117,5 +117,10 @@ class PerseusCtsClient(WebScraper):
                     f.write('\n'.join(text))
 
         text = '\n'.join(text)
+
+        # Perseus does weird things with paragraphs sometimes;
+        # try to clean that up a bit
+        # (in this case, hanging indents of 7 tabs each 3 spaces wide)
+        text = text.replace('\n' + (' ' * 3 * 7), ' ')
 
         return text

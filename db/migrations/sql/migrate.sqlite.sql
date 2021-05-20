@@ -18,6 +18,7 @@ CREATE TABLE lexeme (
 
 CREATE TABLE word (
     form VARCHAR NOT NULL, 
+    parsing VARCHAR(255), 
     lexeme_id INTEGER NOT NULL,  
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 
@@ -34,6 +35,7 @@ CREATE TABLE 'text' (
 );
 
 CREATE TABLE volume (
+    order INTEGER NOT NULL, 
     name VARCHAR NOT NULL, 
     file_url VARCHAR NOT NULL,  
     text_id INTEGER NOT NULL, 

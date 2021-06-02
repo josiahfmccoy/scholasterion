@@ -78,11 +78,8 @@
     <script src="{{url_for('static', filename='js/main.js')}}">
     </script>
 
-    {% block scripts %}{% endblock %}
-
-    {% block modals %}{% endblock %}
-
-    {% include 'components/loader.html' %}
+    <script src="{{url_for('static', filename='js/literature.js')}}">
+    </script>
 
     <div aria-live="polite" aria-atomic="true" class="fixed-bottom" style="z-index: 9999; pointer-events: none;">
          <div class="toast-container float-end p-3">
@@ -91,6 +88,12 @@
     </div>
     <script src="{{url_for('static', filename='js/alerts.js')}}">
     </script>
+
+    {% block scripts %}{% endblock %}
+
+    {% block modals %}{% endblock %}
+
+    {% include 'components/loader.html' %}
 
 </body>
 </html>

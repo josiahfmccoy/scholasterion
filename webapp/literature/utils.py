@@ -1,4 +1,5 @@
 import os
+from flask import current_app
 from lxml import etree
 from db.services import VolumeService
 from ..languages.utils import serializable_language
@@ -32,9 +33,11 @@ def serializable_volume(volume):
 
 
 def load_texts(app):
-    app.remove_static('data')
-
     text_folder = os.getenv('TEXTS_FOLDER')
+    if not text_folder:
+        return
+
+    app.remove_static('data')
 
     files = [x for x in os.listdir(text_folder) if x.endswith('.xml')]
     if not files:
@@ -42,14 +45,30 @@ def load_texts(app):
 
     db_vols = VolumeService.get_all()
 
-    parser = etree.XMLParser(remove_blank_text=True)
     for vol in db_vols:
         fname = os.path.basename(vol.file_url)
         if fname not in files:
             continue
-        print(f'Updating {fname} ...')
 
-        txt = etree.parse(os.path.join(text_folder, fname), parser)
+        add_volume(app=app, id=vol.id, filepath=os.path.join(text_folder, fname))
+
+
+def add_volume(*args, app=None, filepath=None, **kwargs):
+    vol = VolumeService.get_or_create(*args, **kwargs, no_commit=True)
+
+    if app is None:
+        app = current_app
+
+    if filepath:
+        fname = os.path.basename(filepath)
+        app.logger.debug(f'Updating {fname} ...')
+
+        parser = etree.XMLParser(remove_blank_text=True)
+        txt = etree.parse(filepath, parser)
 
         with app.open_static(f'data/{fname}', 'wb') as f:
             f.write(etree.tostring(txt, encoding='utf-8', pretty_print=True))
+
+        vol.file_url = fname
+
+    VolumeService.commit()

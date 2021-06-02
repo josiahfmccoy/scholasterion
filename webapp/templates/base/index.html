@@ -4,10 +4,16 @@
 {% endblock page_header %}
 
 {% block content %}
-    {% include 'components/dashboard/main.html' %}
+    {% include 'components/dashboard/profile.html' %}
+    {% include 'components/dashboard/reader.html' %}
 {% endblock content %}
 
 {% block scripts %}
+    <script src="{{url_for('static', filename='js/profile.js')}}">
+    </script>
+
+    <script src="{{url_for('static', filename='js/literature.js')}}">
+    </script>
 {% endblock scripts %}
 
 {% block modals %}

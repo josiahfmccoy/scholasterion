@@ -2,6 +2,14 @@
 document.addEventListener("DOMContentLoaded", (e) => {
     // Initialize I/O
     API.init();
+
+
+    $('header nav .nav-link').click((e) => {
+        e.preventDefault()
+        const v = e.target.href;
+        Router.goTo(v);
+        $('header nav .navbar-toggler').click();
+    });
 });
 
 
@@ -240,6 +248,10 @@ const Router = ((router) => {
     };
 
     router.goTo = (path, html, pageTitle) => {
+        if (path === window.location.pathname) {
+            return;
+        }
+
         const s = {};
         if (html) {
             s.html = html;
@@ -247,9 +259,14 @@ const Router = ((router) => {
         if (pageTitle) {
             s.pageTitle = pageTitle;
         }
-        window.history.pushState(
-            s, '', window.location.origin + '/' + path
-        );
+
+        if (path.indexOf(window.location.origin) !== 0) {
+            if (path.indexOf('/') !== 0) {
+                path = '/' + path
+            }
+            path = window.location.origin + path;
+        }
+        window.history.pushState(s, '', path);
 
         $(document).trigger('router:change');
     };

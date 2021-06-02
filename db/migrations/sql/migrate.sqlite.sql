@@ -1,4 +1,16 @@
 
+CREATE TABLE 'user' (
+    email VARCHAR(255) NOT NULL, 
+    username VARCHAR(24) NOT NULL, 
+    password VARCHAR(255) NOT NULL, 
+    is_admin BOOLEAN NOT NULL, 
+    id INTEGER NOT NULL, 
+    PRIMARY KEY (id), 
+    UNIQUE (email),
+    UNIQUE (username)
+    CHECK (is_admin IN (0, 1))
+);
+
 CREATE TABLE language (
     iso_code VARCHAR(120) NOT NULL, 
     name VARCHAR NOT NULL,  

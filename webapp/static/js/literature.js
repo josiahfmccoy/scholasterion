@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 const Reader = ((reader) => {
+    const litViewer = $('#literature-viewer');
     const currentTextSelect = $('#current-text');
     const currentVolSelect = $('#current-volume');
     const readingPage = $('#reading-page');
@@ -14,7 +15,14 @@ const Reader = ((reader) => {
     let currentVolume = {};
 
     reader.refresh = () => {
-        return loadTexts().done((texts) => reader.setTextOpts(texts));
+        if (Router.currentRoute().indexOf('library') < 0) {
+            litViewer.addClass('d-none').removeClass('d-flex');
+            return $.Deferred().resolve([]).promise();
+        }
+        else {
+            litViewer.removeClass('d-none').addClass('d-flex');
+            return loadTexts().done((texts) => reader.setTextOpts(texts));
+        }
     }
 
     const loadTexts = () => {
@@ -89,7 +97,7 @@ const Reader = ((reader) => {
         currentText.volumes = currentText.volumes || [];
 
         const route = Router.currentRoute();
-        const currentVol = route[2] || '';
+        const currentVol = route[2] || ((currentText.volumes[0] || {}).id || '');
 
         currentVolSelect.empty()
             .closest('div').toggle(currentText.volumes.length > 1);
@@ -105,12 +113,7 @@ const Reader = ((reader) => {
                 o.attr('selected', 'selected');
             }
         }
-        if (!currentVol && currentText.volumes.length) {
-            loadVolume(currentText.volumes[0].id).done((vol) => reader.setVolume(vol));
-        }
-        else if (currentVol) {
-            loadVolume(currentVol).done((vol) => reader.setVolume(vol));
-        }
+        loadVolume(currentVol).done((vol) => reader.setVolume(vol));
     };
 
     const loadVolume = (id) => {
@@ -145,13 +148,17 @@ const Reader = ((reader) => {
     };
 
     const loadContent = (url) => {
+        const loading = $.Deferred();
+        if (!url) {
+            return loading.resolve({}).promise();
+        }
+
         if (url.indexOf('http') != 0) {
             if (url.indexOf('/static/data') != 0) {
                 url = '/static/data/' + url;
             }
         }
         Loader.show('content');
-        const loading = $.Deferred();
 
         $.ajax({
             url: url,
@@ -172,7 +179,10 @@ const Reader = ((reader) => {
     };
     reader.setContent = (xml) => {
         readingPage.empty();
-        $('<div class="lang-' + currentText.language.iso_code + '" />')
+        if ($.isEmptyObject(xml)) {
+            return;
+        }
+        $('<div class="lang-' + (currentText.language || {}).iso_code + '" />')
             .html(xml.outerHTML || '')
             .appendTo(readingPage);
     };

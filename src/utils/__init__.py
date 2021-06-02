@@ -12,10 +12,11 @@ punctuation = ''.join([
 ])
 
 
-def norm_word(word):
-    n = norm_accents(word.strip().lower().translate(
-        str.maketrans(dict.fromkeys(punctuation))
-    ))
+def norm_word(word, lowercase=True):
+    n = word.strip()
+    if lowercase:
+        n = n.lower()
+    n = norm_accents(n.translate(str.maketrans(dict.fromkeys(punctuation))))
     return n
 
 

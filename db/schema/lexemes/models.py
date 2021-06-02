@@ -3,8 +3,43 @@ from ..utils.base import Model
 
 
 __all__ = [
-    'Word', 'Lexeme'
+    'Token', 'Word', 'Lexeme'
 ]
+
+
+token_words = sa.Table(
+    'token_words', Model.metadata,
+    sa.Column('token_id', sa.Integer(), sa.ForeignKey('token.id'), nullable=False),
+    sa.Column('word_id', sa.Integer(), sa.ForeignKey('word.id'), nullable=False)
+)
+
+
+class Token(Model):
+    identifier = sa.Column(sa.Unicode(60), nullable=False)
+    form = sa.Column(sa.Unicode(), nullable=False)
+    gloss = sa.Column(sa.Unicode(), nullable=True)
+
+    volume_id = sa.Column(
+        sa.Integer(), sa.ForeignKey('volume.id'), nullable=True
+    )
+    volume = sa.orm.relationship(
+        'Volume', backref=sa.orm.backref('tokens', cascade='all, delete-orphan')
+    )
+
+    words = sa.orm.relationship(
+        'Word', secondary=token_words, backref=sa.orm.backref('tokens')
+    )
+
+    __table_args__ = (
+        sa.UniqueConstraint(
+            'identifier', 'volume_id'
+        ),
+    )
+
+    def __repr__(self):
+        return (
+            f"{self.__class__.__qualname__}('{self.form}')"
+        )
 
 
 class Word(Model):
@@ -26,6 +61,7 @@ class Word(Model):
 
 class Lexeme(Model):
     lemma = sa.Column(sa.Unicode(), nullable=False)
+    gloss = sa.Column(sa.Unicode(), nullable=True)
 
     language_id = sa.Column(
         sa.Integer(), sa.ForeignKey('language.id'), nullable=True
@@ -37,7 +73,7 @@ class Lexeme(Model):
 
     __table_args__ = (
         sa.UniqueConstraint(
-            'lemma', 'language_id'
+            'lemma', 'gloss', 'language_id'
         ),
     )
 

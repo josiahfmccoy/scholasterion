@@ -1,3 +1,4 @@
+import os
 from lxml import etree
 from .utils import make_uid
 try:
@@ -20,6 +21,7 @@ class TextProcessor:
             yield word
 
     def process_file(self, filepath):
+        self.logger.debug(f'Processing {os.path.basename(filepath)} ...')
         if filepath.endswith('.xml') or filepath.endswith('.html'):
             parser = etree.XMLParser(remove_blank_text=True)
             text = etree.parse(filepath, parser)

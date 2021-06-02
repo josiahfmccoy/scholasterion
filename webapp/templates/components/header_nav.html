@@ -1,35 +1,44 @@
-{% from 'macros/nav_macros.html' import render_nav_home,
-                                        render_nav_item,
-                                        render_nav_toggle %}
+{% macro render_nav_home(name) %}
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<a class="navbar-brand" href="{{ url_for('base.index') }}">
+    {{ name }}
+</a>
+
+{% endmacro %}
+
+{% macro render_nav_toggle() %}
+
+<button class="navbar-toggler" type="button"
+    data-bs-toggle="collapse" data-bs-target="#navbarCollapseContent"
+    aria-controls="navbarCollapseContent" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+{% endmacro %}
+
+{% macro render_nav_item(title, url, active=False) %}
+
+<li class="nav-item">
+    <a href="{{ url }}"
+        class="nav-link{% if active %} active{% endif %}"
+        {% if active %}aria-current="page"{% endif %}>
+        {{ title }}
+    </a>
+</li>
+
+{% endmacro %}
+
+<nav class="navbar navbar-expand-xxl navbar-dark bg-dark">
     <div class="container">
+        {{ render_nav_toggle() }}
         {{ render_nav_home(site_name) }}
 
-        {{ render_nav_toggle() }}
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarCollapseContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                {% if current_user and current_user.is_authenticated %}
-                    {{ render_nav_item(
-                        'Projects',
-                        url_for('projects.index')
-                    ) }}
-                    {{ render_nav_item(
-                        'Term Ontology',
-                        url_for('ontologies.index')
-                    ) }}
-                    {{ render_nav_item(
-                        'Utilities', url_for('projects.utilities')
-                    ) }}
-                {% endif %}
             </ul>
             <ul class="navbar-nav mb-2 mb-lg-0">
-                {# if current_user and current_user.is_authenticated %}
-                    {{ render_nav_item('Logout', url_for('security.logout')) }}
-                {% else %}
-                    {{ render_nav_item('Login', url_for('security.login')) }}
-                {% endif #}
+                {{ render_nav_item('Login', '#') }}
             </ul>
         </div>
     </div>

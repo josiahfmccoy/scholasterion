@@ -1,0 +1,21 @@
+
+/* use Gentium Plus - Regular in .woff format */
+@font-face {
+  font-family: SILGentiumPlus;
+  src: url(./fonts/GentiumPlus-R.woff);
+}
+/* use Gentium Plus - Italic in .woff format */
+@font-face {
+  font-family: SILGentiumPlus;
+  font-style: italic;
+  src: url(./fonts/GentiumPlus-I.woff);
+}
+
+/*
+.lang-grc {
+    font-family: SILGentiumPlus;
+}
+.lang-cop {
+    font-family: SILGentiumPlus;
+}
+*/

@@ -295,6 +295,7 @@ const Reader = ((reader) => {
         })
         .done((data, status, jqXHR) => {
             loading.resolve(data.texts);
+            loading.resolve(data.texts);
             Loader.hide('texts');
         })
         .fail((jqXHR, status, error) => {
@@ -339,6 +340,7 @@ const Reader = ((reader) => {
         })
         .done((data, status, jqXHR) => {
             reader.setText(data.text);
+            loading.resolve(data.text);
             Loader.hide('text');
         })
         .fail((jqXHR, status, error) => {
@@ -388,6 +390,7 @@ const Reader = ((reader) => {
         })
         .done((data, status, jqXHR) => {
             reader.setVolume(data.volume);
+            loading.resolve(data.volume);
             Loader.hide('volume');
         })
         .fail((jqXHR, status, error) => {
@@ -430,7 +433,10 @@ const Reader = ((reader) => {
         return loading.promise();
     };
     reader.setContent = (xml) => {
-        readingPage.html(xml.outerHTML || '');
+        readingPage.empty();
+        $('<div class="lang-' + currentText.language.iso_code + '" />')
+            .html(xml.outerHTML || '')
+            .appendTo(readingPage);
     };
 
     currentTextSelect.change((e) => {
@@ -448,43 +454,49 @@ const Reader = ((reader) => {
         Router.goTo(currentText.id + '/' + v);
     });
 
-    $('body').on('keyup', (e) => {
-        if (e.key === 'Escape') {
-            $('.popover').popover('dispose');
-        }
-    });
-    $('body').on('dblclick', '.word-form', (e) => {
-        e.preventDefault();
+    const loadParsing = (vol_id, token_id) => {
+        // Loader.show('parsing');
+        const loading = $.Deferred();
 
-        const me = $(e.target);
-        let form = me.text().toLowerCase().trim();
+        $.ajax({
+            url: '/api/volume/' + parseInt(vol_id) + '/token/' + token_id,
+            type: 'GET',
+            contentType: false,
+            processData: false
+        })
+        .done((data, status, jqXHR) => {
+            loading.resolve(data.token);
+            Loader.hide('parsing');
+        })
+        .fail((jqXHR, status, error) => {
+            loading.reject(jqXHR, status, error);
+            // Loader.hide('parsing');
+        });
 
-        const lemma = me.siblings('.lemma');
-        if (!lemma.length) {
-            return;
-        }
-        const lem = [];
-        for (const el of lemma) {
-            lem.push(el.innerText);
-        }
+        return loading.promise();
+    };
 
+    const showToken = (element, token) => {
+        const lem = token.words.map(x => x.lexeme.lemma);
         const gls = [];
-        const contextGloss = me.siblings('.gloss');
-        if (contextGloss.length) {
-            gls.push(contextGloss.text());
+        if (token.gloss) {
+            gls.push(token.gloss);
         }
         else {
-            // TODO; use glossing API
+            for (const g of token.words.map(x => x.lexeme.gloss)) {
+                if (g) {
+                    gls.push(g);
+                }
+            }
         }
-
-        Alerts.popover(e.target, {
+        Alerts.popover(element, {
             title: lem.join('; '),
             content: gls.join('</ br>'),
             html: true,
             placement: 'left'
         });
 
-        // Alerts.tooltip(e.target, {
+        // Alerts.tooltip(element, {
         //     header: lem.join('; '),
         //     title: gls.join('; ') || '...',
         //     html: true,
@@ -497,6 +509,30 @@ const Reader = ((reader) => {
         //     type: 'light',
         //     // autohide: false
         // });
+    };
+
+    $('body').on('keyup', (e) => {
+        if (e.key === 'Escape') {
+            $('.popover').popover('dispose');
+        }
+    });
+    $('body').on('dblclick', '.word', (e) => {
+        e.preventDefault();
+
+        const me = $(e.target);
+
+        const t = me.attr('data-token');
+        if (t) {
+            showToken(e.target, JSON.parse(t));
+        }
+        else {
+            const id = me.attr('id');
+            loadParsing(currentVolume.id, id)
+                .done((token) => {
+                    me.attr('data-token', JSON.stringify(token));
+                    showToken(e.target, token);
+                });
+        }
     });
 
     return reader;

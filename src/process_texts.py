@@ -6,7 +6,7 @@ from lxml import etree
 from utils import *
 
 
-def process_text(filename, outpath=None, logger=None):
+def process_text(filename, outpath=None, logger=None, overwrite=False):
     outname = outpath or os.path.dirname(filename)
     if outname.endswith('formatted'):
         outname = os.path.dirname(outname)
@@ -19,7 +19,7 @@ def process_text(filename, outpath=None, logger=None):
             outname = outname.rsplit('.', 1)[0]
         outname += '.xml'
 
-    if os.path.isfile(outname):
+    if not overwrite and os.path.isfile(outname):
         raise AssertionError('File exists!')
 
     logger = logger or make_logger('scraper')
@@ -35,6 +35,7 @@ if __name__ == '__main__':
     parser.add_argument('-f', '--folderpath')
     parser.add_argument('-o', '--outpath', default=None)
     parser.add_argument('-v', '--verbose', action='store_true', default=False)
+    parser.add_argument('--overwrite', action='store_true', default=False)
     args = parser.parse_args()
 
     logger = make_logger('processor', level=('debug' if args.verbose else 'info'))
@@ -43,7 +44,9 @@ if __name__ == '__main__':
     for filename in os.listdir(args.folderpath):
         fname = os.path.join(args.folderpath, filename)
         try:
-            process_text(fname, outpath=args.outpath, logger=logger)
+            process_text(
+                fname, outpath=args.outpath, logger=logger, overwrite=args.overwrite
+            )
         except AssertionError:
             continue
     end = time.time()

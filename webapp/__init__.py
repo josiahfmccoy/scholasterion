@@ -65,3 +65,6 @@ def init_routes(app):
 
     from .literature.api import literature_api
     app.register_blueprint(literature_api)
+
+    from .lexemes.api import lexeme_api
+    app.register_blueprint(lexeme_api)

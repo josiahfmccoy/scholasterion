@@ -1,6 +1,9 @@
 import json
 import os
-from processing.processor import TextProcessor
+try:
+    from ..processing.processor import TextProcessor
+except ValueError:
+    from processing.processor import TextProcessor
 try:
     from ..utils import *
 except ValueError:

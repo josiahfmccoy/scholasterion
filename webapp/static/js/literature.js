@@ -56,7 +56,7 @@ const Reader = ((reader) => {
             }
         }
         currentTextSelect.val(currentVal);
-        loadText(currentTextSelect.val() || {});
+        return loadText(currentTextSelect.val() || {}).done((text) => reader.setText(text));
     };
 
     const loadText = (id) => {
@@ -74,7 +74,6 @@ const Reader = ((reader) => {
             processData: false
         })
         .done((data, status, jqXHR) => {
-            reader.setText(data.text);
             loading.resolve(data.text);
             Loader.hide('text');
         })
@@ -107,10 +106,10 @@ const Reader = ((reader) => {
             }
         }
         if (!currentVol && currentText.volumes.length) {
-            loadVolume(currentText.volumes[0].id);
+            loadVolume(currentText.volumes[0].id).done((vol) => reader.setVolume(vol));
         }
         else if (currentVol) {
-            loadVolume(currentVol);
+            loadVolume(currentVol).done((vol) => reader.setVolume(vol));
         }
     };
 
@@ -129,7 +128,6 @@ const Reader = ((reader) => {
             processData: false
         })
         .done((data, status, jqXHR) => {
-            reader.setVolume(data.volume);
             loading.resolve(data.volume);
             Loader.hide('volume');
         })

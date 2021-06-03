@@ -5,6 +5,7 @@
 from .utils.base import Model  # noqa
 
 # 2. Import all model files
+from .users.models import *  # noqa
 from .languages.models import *  # noqa
 from .lexemes.models import *  # noqa
 from .literature.models import *  # noqa

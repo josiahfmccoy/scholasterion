@@ -14,7 +14,7 @@ def create_app():
     app = Flask(__name__)
     app.logger.info("Initializing new Scholasterion WebApp")
 
-    app.secret_key = os.getenv('SECRET_KEY', 'super_secret').decode()
+    app.secret_key = os.getenv('SECRET_KEY', 'super_secret').encode()
 
     @app.context_processor
     def inject_globals():

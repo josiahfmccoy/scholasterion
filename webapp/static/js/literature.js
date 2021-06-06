@@ -48,10 +48,9 @@ const Reader = ((reader) => {
     };
     reader.setTextOpts = (texts) => {
         const route = Router.currentRoute();
-        const currentVal = route[1] || '';
+        const currentVal = route[1] || ((texts[0] || {}).id || '');
 
-        currentTextSelect.empty()
-            .append('<option value="">&lt;Select a Document&gt;</option>');
+        currentTextSelect.empty();
         for (const txt of texts) {
             const o = $('<option />')
                 .attr({

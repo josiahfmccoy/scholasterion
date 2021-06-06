@@ -39,6 +39,8 @@ class TextProcessor:
         self._uids = {}
         for w in text.xpath('//span[@class="word"]'):
             if 'id' in w.attrib:
+                uid = w.attrib['id'].split('.', 1)[1]
+                self._uids[uid] = 0
                 continue
             uid = make_uid()
             while uid in self._uids:

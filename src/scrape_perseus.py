@@ -1,6 +1,6 @@
 import argparse
 import time
-from scrapers.perseus_cts import PerseusCtsClient
+from scrapers.perseus_github import PerseusGithubClient
 from utils import *
 
 
@@ -14,10 +14,11 @@ if __name__ == '__main__':
     logger = make_logger('scraper', level=('debug' if args.verbose else 'info'))
 
     # ConPhil, urn:cts:latinLit:stoa0058.stoa001.perseus-lat2
+    # Antiquities, urn:cts:greekLit:tlg0526.tlg001.perseus-grc1
 
     start = time.time()
 
-    client = PerseusCtsClient(logger=logger)
+    client = PerseusGithubClient(logger=logger)
     text = client.load_text(
         urn=args.urn
     )

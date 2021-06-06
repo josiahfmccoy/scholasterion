@@ -68,7 +68,7 @@ const Alerts = ((alerts) => {
             .attr({
                 'data-bs-dismiss': 'popover'
             })
-            .addClass('btn-close btn-sm p-0 ms-2');
+            .addClass('btn-close btn-sm p-0 ms-2 float-end');
         $(p.tip).find('.popover-header').append(btn);
     };
     $('body').on('click', '[data-bs-dismiss="popover"]', (e) => {

@@ -22,7 +22,9 @@ class User(Model):
 
     @password.setter
     def password(self, value):
-        self._password = generate_password_hash(value, method='sha256')
+        hashed = generate_password_hash(value, method='sha256')
+        print(hashed)
+        self._password = hashed
 
     def __repr__(self):
         return f"{self.__class__.__qualname__}({self.email})"

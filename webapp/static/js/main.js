@@ -55,6 +55,9 @@ const API = ((api) => {
     }
     const initForms = () => {
         body.on('submit', 'form', function(e) {
+            if (!this.getAttribute('action')) {
+                return;
+            }
             e.preventDefault();
             const form = $(this);
             const msg = form.attr('data-submit-message') || 'Submitting';
@@ -247,11 +250,7 @@ const Router = ((router) => {
         return path.split('/').filter(x => x.trim() != '');
     };
 
-    router.goTo = (path, html, pageTitle) => {
-        if (path === window.location.pathname) {
-            return;
-        }
-
+    const makeState = (html, pageTitle) => {
         const s = {};
         if (html) {
             s.html = html;
@@ -260,14 +259,36 @@ const Router = ((router) => {
             s.pageTitle = pageTitle;
         }
 
+        return s;
+    };
+    const normPath = (path) => {
         if (path.indexOf(window.location.origin) !== 0) {
             if (path.indexOf('/') !== 0) {
                 path = '/' + path
             }
             path = window.location.origin + path;
         }
-        window.history.pushState(s, '', path);
+        return path;
+    };
 
+    router.redirect = (path, triggerChange) => {
+        path = normPath(path);
+        if (path === window.location.href) {
+            return;
+        }
+        window.history.replaceState({}, '', path);
+        if (triggerChange === true) {
+            $(document).trigger('router:change');
+        }
+    };
+
+    router.goTo = (path, html, pageTitle) => {
+        path = normPath(path);
+        if (path === window.location.href) {
+            return;
+        }
+        s = makeState(html, pageTitle);
+        window.history.pushState(s, '', path);
         $(document).trigger('router:change');
     };
 

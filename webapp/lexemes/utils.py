@@ -9,6 +9,8 @@ __all__ = [
     'get_token', 'parse_loegion'
 ]
 
+ALLOW_AUTOLOAD = False
+
 
 def serializable_token(token):
     if not token:
@@ -73,11 +75,19 @@ def parse_loegion(volume, identifier):
     for tok in existing:
         for w in tok.words:
             words[w.id] = w
+
+    word_form = norm_word(t)
+    existing = LexemeService.Words.get_all(form=word_form)
+    for w in existing:
+        words[w.id] = w
+
     words = list(words.values())
 
     if not words:
+        if not ALLOW_AUTOLOAD:
+            return None
+
         parsed = LoegionParser().parse_word(t)
-        word_form = norm_word(t)
         for lem, parsings in parsed.items():
             lex = LexemeService.get_or_create(
                 lemma=lem,

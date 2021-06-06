@@ -53,6 +53,9 @@ def create_app():
 
     app.remove_static = remove_static
 
+    from db.data import load_defaults
+    load_defaults()
+
     from .literature.utils import load_texts
     load_texts(app)
 
@@ -62,6 +65,9 @@ def create_app():
 def init_routes(app):
     from .base.routes import base
     app.register_blueprint(base)
+
+    from .users.api import user_api
+    app.register_blueprint(user_api)
 
     from .literature.api import literature_api
     app.register_blueprint(literature_api)

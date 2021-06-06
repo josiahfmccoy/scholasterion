@@ -45,6 +45,7 @@ class Token(Model):
 class Word(Model):
     form = sa.Column(sa.Unicode(), nullable=False)
     parsing = sa.Column(sa.Unicode(255), nullable=True)
+    gloss = sa.Column(sa.Unicode(), nullable=True)
 
     lexeme_id = sa.Column(
         sa.Integer(), sa.ForeignKey('lexeme.id'), nullable=True
@@ -62,6 +63,8 @@ class Word(Model):
 class Lexeme(Model):
     lemma = sa.Column(sa.Unicode(), nullable=False)
     gloss = sa.Column(sa.Unicode(), nullable=True)
+
+    subscript = sa.Column(sa.Integer(), nullable=True)
 
     language_id = sa.Column(
         sa.Integer(), sa.ForeignKey('language.id'), nullable=True

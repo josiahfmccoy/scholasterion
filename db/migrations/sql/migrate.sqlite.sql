@@ -22,6 +22,7 @@ CREATE TABLE language (
 CREATE TABLE lexeme (
     lemma VARCHAR NOT NULL, 
     gloss VARCHAR, 
+    subscript INTEGER, 
     language_id INTEGER NOT NULL,  
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 
@@ -32,6 +33,7 @@ CREATE TABLE lexeme (
 CREATE TABLE word (
     form VARCHAR NOT NULL, 
     parsing VARCHAR(255), 
+    gloss VARCHAR, 
     lexeme_id INTEGER NOT NULL,  
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 

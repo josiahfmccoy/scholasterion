@@ -225,6 +225,9 @@ const Reader = ((reader) => {
     };
 
     const showToken = (element, token) => {
+        if (!token) {
+            return;
+        }
         const lem = token.words.map(x => x.lexeme.lemma);
         const gls = [];
         if (token.gloss) {
@@ -275,8 +278,12 @@ const Reader = ((reader) => {
         }
         else {
             const id = me.attr('id');
+
             loadParsing(currentVolume.id, id)
                 .done((token) => {
+                    if (token == null) {
+                        return;
+                    }
                     me.attr('data-token', JSON.stringify(token));
                     showToken(e.target, token);
                 });

@@ -17,10 +17,10 @@ INSERT INTO 'text' (id, name, language_id) VALUES
 (4, 'Apology to Autolycus', 1);
 
 INSERT INTO volume (text_id, 'order', name, file_url) VALUES
-(1, 1, 'Book I: Laypeople', 'apostolic-constitutions-1.xml'),
+(1, 1, 'Book I: Laypeople', 'apostolic-constitutions/book-1.xml'),
 (1, 2, 'Book II: Bishops, Elders, and Deacons', 'apostolic-constitutions-2.xml'),
-(1, 3, 'Book III: Widows', 'apostolic-constitutions-3.xml'),
-(1, 4, 'Book IV: Orphans', 'apostolic-constitutions-4.xml'),
+(1, 3, 'Book III: Widows', 'apostolic-constitutions/book-3.xml'),
+(1, 4, 'Book IV: Orphans', 'apostolic-constitutions/book-4.xml'),
 (2, 1, 'Book I', 'antiquities-of-the-jews/book-1.xml'),
 (2, 2, 'Book II', 'antiquities-of-the-jews/book-2.xml'),
 (2, 3, 'Book III', 'antiquities-of-the-jews/book-3.xml'),
@@ -42,6 +42,6 @@ INSERT INTO volume (text_id, 'order', name, file_url) VALUES
 (2, 19, 'Book XVIX', 'antiquities-of-the-jews/book-19.xml'),
 (2, 20, 'Book XX', 'antiquities-of-the-jews/book-20.xml'),
 (3, 1, 'Book I', 'consolation-of-philosophy.xml'),
-(4, 1, 'Book I', 'apology-to-autolycus-1.xml'),
-(4, 2, 'Book II', 'apology-to-autolycus-2.xml'),
-(4, 3, 'Book III', 'apology-to-autolycus-3.xml');
+(4, 1, 'Book I', 'apology-to-autolycus/book-1.xml'),
+(4, 2, 'Book II', 'apology-to-autolycus/book-2.xml'),
+(4, 3, 'Book III', 'apology-to-autolycus/book-3.xml');

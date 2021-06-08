@@ -21,7 +21,7 @@ def process_text(filename, outpath=None, logger=None, overwrite=False):
         outname += '.xml'
 
     logger = logger or make_logger('processor')
-    logger.debug(f'Processing {os.path.relpath(filename)} ...')
+    logger.info(f'Processing {os.path.relpath(filename)} ...')
 
     if not overwrite and os.path.isfile(outname):
         raise AssertionError('File exists!')

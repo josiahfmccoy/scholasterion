@@ -8,7 +8,16 @@ literature_api = api.Blueprint('literature_api', __name__)
 
 @literature_api.route('/api/text', methods=['GET'])
 def load_texts():
-    texts = sorted(TextService.get_all(), key=lambda x: x.name + '|' + x.language.iso_code)
+    def sort_title(x):
+        n = x.name.strip()
+        if n.startswith('A '):
+            n = n[2:]
+        elif n.startswith('The '):
+            n = n[4:]
+        n = f'{n}|{x.language.iso_code}'
+        return n
+
+    texts = sorted(TextService.get_all(), key=lambda x: sort_title(x))
     return api.Result({'texts': [serializable_text(t) for t in texts]})
 
 

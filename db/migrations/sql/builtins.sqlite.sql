@@ -11,10 +11,11 @@ INSERT INTO language (id, name, iso_code) VALUES
 (2, 'Latin', 'lat');
 
 INSERT INTO 'text' (id, name, language_id) VALUES
-(1, 'Apostolic Constitutions', 1),
-(2, 'Antiquities of the Jews', 1),
-(3, 'Consolation of Philosophy', 2),
-(4, 'Apology to Autolycus', 1);
+(1, 'Apostolic Instructions', 1),
+(2, 'The Ancient History of the Jews', 1),
+(3, 'A Consolation from Philosophy', 2),
+(4, 'Defense to Autolycus', 1),
+(5, "Chrysostom's Sermons", 1);
 
 INSERT INTO volume (text_id, 'order', name, file_url) VALUES
 (1, 1, 'Book I: Laypeople', 'apostolic-constitutions/book-1.xml'),
@@ -44,4 +45,5 @@ INSERT INTO volume (text_id, 'order', name, file_url) VALUES
 (3, 1, 'Book I', 'consolation-of-philosophy.xml'),
 (4, 1, 'Book I', 'apology-to-autolycus/book-1.xml'),
 (4, 2, 'Book II', 'apology-to-autolycus/book-2.xml'),
-(4, 3, 'Book III', 'apology-to-autolycus/book-3.xml');
+(4, 3, 'Book III', 'apology-to-autolycus/book-3.xml'),
+(5, 6, 'Sermons on Romans', 'chrysostom-homilies/romans.xml');

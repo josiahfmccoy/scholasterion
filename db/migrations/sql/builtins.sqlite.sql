@@ -15,7 +15,8 @@ INSERT INTO 'text' (id, name, language_id) VALUES
 (2, 'The Ancient History of the Jews', 1),
 (3, 'A Consolation from Philosophy', 2),
 (4, 'Defense to Autolycus', 1),
-(5, "Chrysostom's Sermons", 1);
+(5, "Chrysostom's Sermons", 1),
+(6, "Eusebius's Church History", 1);
 
 INSERT INTO volume (text_id, 'order', name, file_url) VALUES
 (1, 1, 'Book I: Laypeople', 'apostolic-constitutions/book-1.xml'),
@@ -46,4 +47,5 @@ INSERT INTO volume (text_id, 'order', name, file_url) VALUES
 (4, 1, 'Book I', 'apology-to-autolycus/book-1.xml'),
 (4, 2, 'Book II', 'apology-to-autolycus/book-2.xml'),
 (4, 3, 'Book III', 'apology-to-autolycus/book-3.xml'),
-(5, 6, 'Sermons on Romans', 'chrysostom-homilies/romans.xml');
+(5, 6, 'Sermons on Romans', 'chrysostom-homilies/romans.xml'),
+(6, 1, 'Book I', 'ecclesiastical-history/book-1.xml');

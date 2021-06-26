@@ -48,8 +48,8 @@ def serializable_lexeme(lex):
     return s
 
 
-def get_token(volume, identifier):
-    fname = volume.file_url
+def get_token(document, identifier):
+    fname = document.file_url
     parser = etree.XMLParser(remove_blank_text=True)
     if not fname.startswith('http'):
         fname = current_app.static_path('data/' + fname)
@@ -64,11 +64,11 @@ def get_token(volume, identifier):
     return t[0].text
 
 
-def parse_loegion(volume, identifier):
+def parse_loegion(document, identifier):
     from src.parsing.loegion import LoegionParser, norm_word
-    t = get_token(volume, identifier)
+    t = get_token(document, identifier)
 
-    lang = volume.text.language
+    lang = document.collection.language
 
     words = {}
     existing = LexemeService.Tokens.get_all(form=t)
@@ -108,7 +108,7 @@ def parse_loegion(volume, identifier):
     token = LexemeService.Tokens.get_or_create(
         identifier=identifier,
         form=t,
-        volume_id=volume.id,
+        document_id=document.id,
         no_commit=True
     )
     token.words = words

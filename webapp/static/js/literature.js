@@ -6,143 +6,241 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
 
 const Reader = ((reader) => {
-    const litViewer = $('#literature-viewer');
-    const currentTextSelect = $('#current-text');
-    const currentVolSelect = $('#current-volume');
+    const libraryPage = $('#library-page');
+
+    const frontDeskPage = $('#front-desk-page');
     const readingPage = $('#reading-page');
 
-    let currentText = {};
-    let currentVolume = {};
-
     reader.refresh = () => {
-        if (Router.currentRoute().indexOf('library') < 0) {
-            litViewer.addClass('d-none').removeClass('d-flex');
-            return $.Deferred().resolve([]).promise();
+        const route = Router.currentRoute();
+
+        const loading = $.Deferred();
+
+        if (route.indexOf('library') < 0) {
+            libraryPage.addClass('d-none');
+            return loading.resolve().promise();
+        }
+
+        readingPage.hide();
+        frontDeskPage.hide();
+
+        if (route.indexOf('reader') < 0) {
+            loadCollections().done((cols) => {
+                reader.showCollections(cols);
+                frontDeskPage.show();
+                loading.resolve();
+            });
         }
         else {
-            litViewer.removeClass('d-none').addClass('d-flex');
-            return loadTexts().done((texts) => reader.setTextOpts(texts));
+            reader.load().done(() => loading.resolve());
         }
+
+        loading.done(() => libraryPage.removeClass('d-none'));
+
+        return loading.promise();
     }
 
-    const loadTexts = () => {
-        Loader.show('texts');
+    const loadCollections = () => {
+        Loader.show('collections');
         const loading = $.Deferred();
 
         $.ajax({
-            url: '/api/text',
+            url: '/api/collection',
             type: 'GET',
             contentType: false,
             processData: false
         })
         .done((data, status, jqXHR) => {
-            loading.resolve(data.texts);
-            Loader.hide('texts');
+            loading.resolve(data.collections);
+            Loader.hide('collections');
         })
         .fail((jqXHR, status, error) => {
             loading.reject(jqXHR, status, error);
-            Loader.hide('texts');
+            Loader.hide('collections');
         });
 
         return loading.promise();
     };
-    reader.setTextOpts = (texts) => {
-        const route = Router.currentRoute();
-        const currentVal = route[1] || ((texts[0] || {}).id || '');
+    reader.showCollections = (collections) => {
+        const root = frontDeskPage.find('.card-body').empty();
 
-        currentTextSelect.empty();
-        for (const txt of texts) {
-            const o = $('<option />')
-                .attr({
-                    'value': txt.id
-                })
-                .text(txt.name + ' (' + txt.language.name + ')')
-                .appendTo(currentTextSelect);
-            if (txt.id == currentVal) {
-                o.attr('selected', 'selected');
+        const langSectionMap = {}
+
+        for (const col of collections) {
+            if (langSectionMap[col.language.id] === undefined) {
+                $('<h3 class="mb-2" />')
+                    .text(col.language.name + ' (' + col.language.iso_code + ')')
+                    .appendTo(root);
+                langSectionMap[col.language.id] = $('<ul class="mb-3" />')
+                    .appendTo(root);
             }
+
+            const container = langSectionMap[col.language.id];
+            const li = $('<li class="mb-1" />')
+                .appendTo(container);
+
+            let title = col.title.replace(/\\n/g, ' ');
+            if (col.author) {
+                title += ' (' + col.author + ')'
+            }
+            $('<a />')
+                .attr('href', '/library/reader/' + col.id)
+                .text(title)
+                .appendTo(li);
         }
-        currentTextSelect.val(currentVal);
-        return loadText(currentTextSelect.val() || {}).done((text) => reader.setText(text));
     };
 
-    const loadText = (id) => {
+    let currentCollection = {};
+    let currentDocument = {}
+
+    reader.load = () => {
+        const route = Router.currentRoute();
+
         const loading = $.Deferred();
-        if (currentText.id == id) {
-            return loading.resolve(currentText).promise();
+
+        const i = route.indexOf('reader') + 1;
+        loadCollection(route[i])
+            .done((col) => {
+                reader.setCollection(col);
+                readingPage.show();
+                loading.resolve(col);
+            })
+            .fail((jqXHR, status, error) => {
+                loading.reject(jqXHR, status, error);
+            });
+
+        return loading.promise();
+    };
+
+    const processCollection = (col) => {
+        col = col || {};
+        col.documents = col.documents || [];
+        col.sections = col.sections || [];
+        col.children = col.documents.concat(col.sections)
+            .sort((a, b) => a.order - b.order);
+
+        col.htmlTitle = () => {
+            return (col.long_title || col.title)
+                .replace(/\\n/g, ' ')
+                .replace(/\n/g, ' ');
+        };
+
+        return col;
+    };
+
+    const loadCollection = (id) => {
+        const loading = $.Deferred();
+        if (currentCollection.id == id) {
+            return loading.resolve(currentCollection).promise();
         }
 
-        Loader.show('text');
+        Loader.show('collection');
 
         $.ajax({
-            url: '/api/text/' + parseInt(id),
+            url: '/api/collection/' + parseInt(id),
             type: 'GET',
             contentType: false,
             processData: false
         })
         .done((data, status, jqXHR) => {
-            loading.resolve(data.text);
-            Loader.hide('text');
+            loading.resolve(data.collection);
+            Loader.hide('collection');
         })
         .fail((jqXHR, status, error) => {
             loading.reject(jqXHR, status, error);
-            Loader.hide('text');
+            Loader.hide('collection');
         });
 
         return loading.promise();
     };
-    reader.setText = (text) => {
-        currentText = text || {};
-        currentText.volumes = currentText.volumes || [];
+    reader.setCollection = (col) => {
+        currentCollection = processCollection(col);
 
         const route = Router.currentRoute();
-        const currentVol = route[2] || ((currentText.volumes[0] || {}).id || '');
 
-        currentVolSelect.empty()
-            .closest('div').toggle(currentText.volumes.length > 1);
-        for (const vol of currentText.volumes) {
-            const o = $('<option />')
-                .attr({
-                    'value': vol.id,
-                    'data-url': vol.file_url
-                })
-                .text(vol.name)
-                .appendTo(currentVolSelect);
-            if (vol.id == currentVol) {
-                o.attr('selected', 'selected');
+        let activeElement = currentCollection;
+        let hLevel = 1;
+        displayHeader(activeElement, hLevel);
+
+        const path = [];
+
+        let i = route.indexOf('reader') + 1;
+        while (i + 1 < route.length) {
+            const idx = route[i + 1];
+            const d = activeElement.children[idx - 1];
+            if (d === undefined) {
+                break;
             }
+            path.push(idx);
+            activeElement = processCollection(d);
+            i++;
+            if (activeElement.file_url !== undefined) {
+                break;
+            }
+            hLevel++;
+            displayHeader(activeElement, hLevel);
         }
-        loadVolume(currentVol).done((vol) => reader.setVolume(vol));
+
+        if (activeElement.file_url !== undefined) {
+            return reader.setDocument(activeElement);
+        }
+        else {
+            displayToC(activeElement, path);
+            return $.Deferred().resolve().promise();
+        }
     };
 
-    const loadVolume = (id) => {
-        const loading = $.Deferred();
-        if (currentVolume.id == id) {
-            return loading.resolve(currentVolume).promise();
+    const displayHeader = (col, lvl) => {
+        const header = readingPage.find('#page-header');
+        const e = header.find('h' + lvl);
+        if (e.length) {
+            e.remove();
         }
 
-        Loader.show('volume');
+        const h = $('<h' + lvl + ' />')
+            .html(col.long_title.replace(/\\n/g, '<br/>'))
+            .appendTo(header);
 
-        $.ajax({
-            url: '/api/volume/' + parseInt(id),
-            type: 'GET',
-            contentType: false,
-            processData: false
-        })
-        .done((data, status, jqXHR) => {
-            loading.resolve(data.volume);
-            Loader.hide('volume');
-        })
-        .fail((jqXHR, status, error) => {
-            loading.reject(jqXHR, status, error);
-            Loader.hide('volume');
-        });
-
-        return loading.promise();
+        if (lvl == 1) {
+            h.addClass('text-center');
+            h.prependTo(header);
+        }
     };
-    reader.setVolume = (vol) => {
-        currentVolume = vol || {};
-        return loadContent(currentVolume.file_url)
+
+    const displayToC = (col, path) => {
+        const page = readingPage.find('#page-body').empty();
+
+        const drawToC = (parent, vol, subPath, listStyle) => {
+            const ul = $('<ul />')
+                .appendTo(parent);
+            if (listStyle !== undefined) {
+                ul.css('list-style-type', listStyle);
+            }
+
+            for (let i = 0; i < vol.children.length; i++) {
+                const c = processCollection(vol.children[i]);
+                const li = $('<li class="mb-1" />').appendTo(ul);
+                $('<a />').text(c.htmlTitle())
+                    .attr({
+                        href: (
+                            '/library/reader/' + currentCollection.id
+                            + '/' + subPath + '/' + (i + 1)
+                        ).replace(/\/\//g, '/')
+                    })
+                    .appendTo(li);
+
+                if (c.children && c.children.length) {
+                    drawToC(li, c, subPath + '/' + (i + 1));
+                }
+            }
+        };
+
+        drawToC(page, col, path.join('/'), '"\\00A7\\0020"');
+    }
+
+    reader.setDocument = (doc) => {
+        currentDocument = doc || {};
+        return loadContent(currentDocument.file_url)
             .done((xml) => reader.setContent(xml));
     };
 
@@ -177,36 +275,22 @@ const Reader = ((reader) => {
         return loading.promise();
     };
     reader.setContent = (xml) => {
-        readingPage.empty();
+        const page = readingPage.find('#page-body').empty();
+
         if ($.isEmptyObject(xml)) {
             return;
         }
-        $('<div class="lang-' + (currentText.language || {}).iso_code + '" />')
+        $('<div class="lang-' + (currentCollection.language || {}).iso_code + '" />')
             .html(xml.outerHTML || '')
-            .appendTo(readingPage);
+            .appendTo(page);
     };
-
-    currentTextSelect.change((e) => {
-        const v = e.target.value;
-        if (!v || v == currentText.id) {
-            return;
-        }
-        Router.goTo('library/' + v);
-    });
-    currentVolSelect.change((e) => {
-        const v = e.target.value;
-        if (!v || v == currentVolume.id) {
-            return;
-        }
-        Router.goTo('library/' + currentText.id + '/' + v);
-    });
 
     const loadParsing = (vol_id, token_id) => {
         // Loader.show('parsing');
         const loading = $.Deferred();
 
         $.ajax({
-            url: '/api/volume/' + parseInt(vol_id) + '/token/' + token_id,
+            url: '/api/document/' + parseInt(vol_id) + '/token/' + token_id,
             type: 'GET',
             contentType: false,
             processData: false
@@ -278,7 +362,7 @@ const Reader = ((reader) => {
         else {
             const id = me.attr('id');
 
-            loadParsing(currentVolume.id, id)
+            loadParsing(currentDocument.id, id)
                 .done((token) => {
                     if (token == null) {
                         return;

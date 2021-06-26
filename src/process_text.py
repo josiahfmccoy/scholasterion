@@ -11,8 +11,6 @@ def process_text(filename, outpath=None, logger=None, overwrite=False):
     outname = outname.replace('\\', '/')
     if '/texts/formatted' in outname:
         outname = outname.replace('/texts/formatted', '/texts/processed')
-    if '/texts/processed' not in outname:
-        outname = os.path.join(outname, 'texts/processed')
 
     outname = os.path.join(outname, os.path.basename(filename))
     if not outname.endswith('.xml'):
@@ -38,7 +36,7 @@ def process_text(filename, outpath=None, logger=None, overwrite=False):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('-f', '--folderpath')
+    parser.add_argument('-f', '--filepath')
     parser.add_argument('-o', '--outpath', default=None)
     parser.add_argument('-v', '--verbose', action='store_true', default=False)
     parser.add_argument('--overwrite', action='store_true', default=False)
@@ -46,24 +44,14 @@ if __name__ == '__main__':
 
     logger = make_logger('processor', level=('debug' if args.verbose else 'info'))
 
-    def recursive_listdir(folderpath):
-        ret = []
-        for x in os.listdir(folderpath):
-            fpath = os.path.join(folderpath, x)
-            if os.path.isfile(fpath):
-                ret.append(fpath)
-            else:
-                ret.extend(recursive_listdir(fpath))
-        return ret
-
     start = time.time()
-    for fname in recursive_listdir(os.path.abspath(args.folderpath)):
-        try:
-            process_text(
-                fname, outpath=args.outpath, logger=logger, overwrite=args.overwrite
-            )
-        except AssertionError:
-            continue
+    try:
+        process_text(
+            args.filepath, outpath=args.outpath,
+            logger=logger, overwrite=args.overwrite
+        )
+    except AssertionError:
+        pass
     end = time.time()
 
     logger.info(f'Ran in {end - start} s')

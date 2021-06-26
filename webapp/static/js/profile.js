@@ -63,34 +63,36 @@ const Profile = ((profile) => {
         updateNav();
 
         const route = Router.currentRoute();
-        if (route.indexOf('user') > -1) {
-            userPage.removeClass('d-none');
 
-            if (route.indexOf('logout') > -1) {
-                profile.logout()
-                    .then(Router.redirect('/user/login'));
+        if (route.indexOf('user') < 0) {
+            userPage.addClass('d-none');
+            return $.Deferred().resolve().promise()
+        }
+
+        if (route.indexOf('logout') > -1) {
+            profile.logout()
+                .then(Router.redirect('/user/login'));
+        }
+
+        profilePage.hide();
+        loginPage.hide();
+
+        if (profile.isLoggedIn()) {
+            if (route.indexOf('login') > -1) {
+                Router.redirect('/user/profile');
             }
-
-            profilePage.hide();
-            loginPage.hide();
-
-            if (profile.isLoggedIn()) {
-                if (route.indexOf('login') > -1) {
-                    Router.redirect('/user/profile');
-                }
-                const newRoute = Router.currentRoute();
-                if (newRoute.indexOf('profile') > -1) {
-                    showProfilePage();
-                }
-            }
-            else {
-                Router.redirect('/user/login');
-                loginPage.show();
+            const newRoute = Router.currentRoute();
+            if (newRoute.indexOf('profile') > -1) {
+                showProfilePage();
             }
         }
         else {
-            userPage.addClass('d-none');
+            Router.redirect('/user/login');
+            loginPage.show();
         }
+
+        userPage.removeClass('d-none');
+
         return $.Deferred().resolve().promise();
     };
 

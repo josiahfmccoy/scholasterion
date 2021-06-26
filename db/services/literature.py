@@ -1,15 +1,15 @@
 from ..schema.literature.models import *
 from .generic import GenericService
 
-__all__ = ['TextService', 'VolumeService']
+__all__ = ['CollectionService', 'DocumentService']
 
 
-class VolumeService(GenericService):
-    __model__ = Volume
+class DocumentService(GenericService):
+    __model__ = Document
 
 
-class TextService(GenericService):
-    __model__ = Text
+class CollectionService(GenericService):
+    __model__ = Collection
 
-    class Volumes(VolumeService):
+    class Documents(DocumentService):
         pass

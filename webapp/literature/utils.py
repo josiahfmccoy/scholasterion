@@ -1,35 +1,54 @@
 import os
 from flask import current_app
 from lxml import etree
-from db.services import VolumeService
+from db.services import DocumentService
 from ..languages.utils import serializable_language
 from ..utils import recursive_listdir
 
 __all__ = [
-    'serializable_text', 'serializable_volume',
+    'serializable_document', 'serializable_collection',
     'load_texts'
 ]
 
 
-def serializable_text(text):
+def serializable_document(document, with_collection=True):
+    if document is None:
+        return None
     s = {
-        'id': text.id,
-        'name': text.name,
-        'language': serializable_language(text.language),
-        'volumes': [
-            serializable_volume(v) for v in sorted(text.volumes, key=lambda x: x.order)
-        ]
+        'id': document.id,
+        'long_title': document.long_title,
+        'title': document.title,
+        'author': document.author,
+        'order': document.order,
+        'file_url': document.file_url
     }
+    if with_collection:
+        s['collection'] = serializable_collection(document.collection)
     return s
 
 
-def serializable_volume(volume):
+def serializable_collection(collection, with_parent=True, with_sections=True):
+    if collection is None:
+        return None
     s = {
-        'id': volume.id,
-        'order': volume.order,
-        'name': volume.name,
-        'file_url': volume.file_url,
+        'id': collection.id,
+        'long_title': collection.long_title,
+        'title': collection.title,
+        'author': collection.author,
+        'order': collection.order,
+        'language': serializable_language(collection.language),
+        'documents': [
+            serializable_document(d, with_collection=False)
+            for d in sorted(collection.documents, key=lambda x: x.order)
+        ]
     }
+    if with_sections:
+        s['sections'] = [
+            serializable_collection(c, with_parent=False)
+            for c in sorted(collection.sections, key=lambda x: x.order)
+        ]
+    if with_parent:
+        s['parent'] = serializable_collection(collection.parent, with_sections=False)
     return s
 
 
@@ -48,23 +67,23 @@ def load_texts(app):
     if not files:
         return
 
-    db_vols = VolumeService.get_all()
+    db_docs = DocumentService.get_all()
 
-    for vol in db_vols:
-        fname = vol.file_url.replace('\\', '/')
+    for doc in db_docs:
+        fname = doc.file_url.replace('\\', '/')
         fname = fname.split('data/')[-1]
 
         if fname not in files:
             continue
 
-        add_volume(
-            app=app, id=vol.id, filepath=os.path.join(text_folder, fname),
+        add_document(
+            app=app, id=doc.id, filepath=os.path.join(text_folder, fname),
             file_url=fname
         )
 
 
-def add_volume(*args, app=None, filepath=None, file_url=None, **kwargs):
-    vol = VolumeService.get_or_create(*args, **kwargs, no_commit=True)
+def add_document(*args, app=None, filepath=None, file_url=None, **kwargs):
+    doc = DocumentService.get_or_create(*args, **kwargs, no_commit=True)
 
     if app is None:
         app = current_app
@@ -79,6 +98,6 @@ def add_volume(*args, app=None, filepath=None, file_url=None, **kwargs):
         with app.open_static(f'data/{fname}', 'wb') as f:
             f.write(etree.tostring(txt, encoding='utf-8', pretty_print=True))
 
-        vol.file_url = fname
+        doc.file_url = fname
 
-    VolumeService.commit()
+    DocumentService.commit()

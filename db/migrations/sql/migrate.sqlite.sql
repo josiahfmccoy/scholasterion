@@ -40,36 +40,41 @@ CREATE TABLE word (
     FOREIGN KEY(lexeme_id) REFERENCES lexeme (id) 
 );
 
-CREATE TABLE 'text' (
-    name VARCHAR NOT NULL, 
-    language_id INTEGER NOT NULL,  
+CREATE TABLE collection (
+    long_title VARCHAR, 
+    title VARCHAR(255) NOT NULL, 
+    author VARCHAR, 
+    'order' INTEGER, 
+    language_id INTEGER NOT NULL, 
+    parent_id INTEGER, 
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 
     FOREIGN KEY(language_id) REFERENCES language (id), 
-    UNIQUE (name, language_id)
+    FOREIGN KEY(parent_id) REFERENCES collection (id) 
 );
 
-CREATE TABLE volume (
-    order INTEGER NOT NULL, 
-    name VARCHAR NOT NULL, 
-    file_url VARCHAR NOT NULL,  
-    text_id INTEGER NOT NULL, 
+CREATE TABLE document (
+    long_title VARCHAR, 
+    title VARCHAR(255) NOT NULL, 
+    author VARCHAR, 
+    'order' INTEGER NOT NULL, 
+    file_url VARCHAR NOT NULL, 
+    collection_id INTEGER NOT NULL, 
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 
-    FOREIGN KEY(text_id) REFERENCES 'text' (id), 
-    UNIQUE (file_url)
-    UNIQUE (name, text_id)
+    FOREIGN KEY(collection_id) REFERENCES collection (id),  
+    UNIQUE (file_url) 
 );
 
 CREATE TABLE token (
     identifier VARCHAR(80) NOT NULL, 
     form VARCHAR NOT NULL, 
     gloss VARCHAR, 
-    volume_id INTEGER NOT NULL, 
+    document_id INTEGER NOT NULL, 
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 
-    FOREIGN KEY(volume_id) REFERENCES volume (id), 
-    UNIQUE (identifier, volume_id)
+    FOREIGN KEY(document_id) REFERENCES document (id), 
+    UNIQUE (identifier, document_id)
 );
 
 CREATE TABLE token_words (

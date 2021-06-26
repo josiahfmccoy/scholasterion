@@ -19,11 +19,11 @@ class Token(Model):
     form = sa.Column(sa.Unicode(), nullable=False)
     gloss = sa.Column(sa.Unicode(), nullable=True)
 
-    volume_id = sa.Column(
-        sa.Integer(), sa.ForeignKey('volume.id'), nullable=True
+    document_id = sa.Column(
+        sa.Integer(), sa.ForeignKey('document.id'), nullable=True
     )
-    volume = sa.orm.relationship(
-        'Volume', backref=sa.orm.backref('tokens', cascade='all, delete-orphan')
+    document = sa.orm.relationship(
+        'Document', backref=sa.orm.backref('tokens', cascade='all, delete-orphan')
     )
 
     words = sa.orm.relationship(
@@ -32,7 +32,7 @@ class Token(Model):
 
     __table_args__ = (
         sa.UniqueConstraint(
-            'identifier', 'volume_id'
+            'identifier', 'document_id'
         ),
     )
 

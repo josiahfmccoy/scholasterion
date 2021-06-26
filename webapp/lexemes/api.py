@@ -1,4 +1,4 @@
-from db.services import TextService, TokenService
+from db.services import CollectionService, TokenService
 from .. import api
 from .utils import *
 
@@ -6,18 +6,18 @@ from .utils import *
 lexeme_api = api.Blueprint('lexeme_api', __name__)
 
 
-@lexeme_api.route('/api/volume/<int:volume_id>/token/<string:token_id>', methods=['GET'])
-def get_token_info(volume_id, token_id):
-    volume = TextService.Volumes.get(volume_id)
-    if not volume:
-        raise api.Exception('Text not found', 404)
+@lexeme_api.route('/api/document/<int:document_id>/token/<string:token_id>', methods=['GET'])
+def get_token_info(document_id, token_id):
+    document = CollectionService.Documents.get(document_id)
+    if not document:
+        raise api.Exception('Document not found', 404)
 
-    token = TokenService.get(identifier=token_id, volume_id=volume.id)
+    token = TokenService.get(identifier=token_id, document_id=document.id)
     if not token:
-        lang = volume.text.language
+        lang = document.collection.language
         if lang.iso_code in ['grc', 'lat']:
             try:
-                token = parse_loegion(volume, token_id)
+                token = parse_loegion(document, token_id)
             except Exception:
                 import traceback
                 traceback.print_exc()

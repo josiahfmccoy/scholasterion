@@ -3,49 +3,64 @@ from ..utils.base import Model
 
 
 __all__ = [
-    'Text', 'Volume'
+    'Collection', 'Document'
 ]
 
 
-class Text(Model):
-    name = sa.Column(sa.Unicode(), nullable=False)
+class Collection(Model):
+    title = sa.Column(sa.Unicode(255), nullable=False)
+    author = sa.Column(sa.Unicode())
+
+    _long_title = sa.Column('long_title', sa.Unicode())
+
+    @property
+    def long_title(self):
+        return self._long_title or self.title
+
+    order = sa.Column(sa.Integer(), nullable=True)
 
     language_id = sa.Column(
         sa.Integer(), sa.ForeignKey('language.id'), nullable=False
     )
     language = sa.orm.relationship(
         'Language',
-        backref=sa.orm.backref('texts', cascade='all, delete-orphan')
+        backref=sa.orm.backref('documents', cascade='all, delete-orphan')
     )
 
-    __table_args__ = (
-        sa.UniqueConstraint(
-            'name', 'language_id'
-        ),
+    parent_id = sa.Column(
+        sa.Integer(), sa.ForeignKey('collection.id'), nullable=True
+    )
+    parent = sa.orm.relationship(
+        'Collection',
+        remote_side='Collection.id',
+        backref=sa.orm.backref('sections', cascade='all, delete-orphan')
     )
 
     def __repr__(self):
-        return f"{self.__class__.__qualname__}('{self.name}')"
+        return f"{self.__class__.__qualname__}('{self.title}')"
 
 
-class Volume(Model):
+class Document(Model):
+    title = sa.Column(sa.Unicode(255), nullable=False)
+    author = sa.Column(sa.Unicode())
+
+    _long_title = sa.Column('long_title', sa.Unicode())
+
+    @property
+    def long_title(self):
+        return self._long_title or self.title
+
     order = sa.Column(sa.Integer(), nullable=False)
-    name = sa.Column(sa.Unicode(), nullable=False)
+
     file_url = sa.Column(sa.Unicode(), nullable=False, unique=True)
 
-    text_id = sa.Column(
-        sa.Integer(), sa.ForeignKey('text.id'), nullable=False
+    collection_id = sa.Column(
+        sa.Integer(), sa.ForeignKey('collection.id'), nullable=False
     )
-    text = sa.orm.relationship(
-        'Text',
-        backref=sa.orm.backref('volumes', cascade='all, delete-orphan')
-    )
-
-    __table_args__ = (
-        sa.UniqueConstraint(
-            'name', 'text_id'
-        ),
+    collection = sa.orm.relationship(
+        'Collection',
+        backref=sa.orm.backref('documents', cascade='all, delete-orphan')
     )
 
     def __repr__(self):
-        return f"{self.__class__.__qualname__}('{self.text.name}', '{self.file_url}')"
+        return f"{self.__class__.__qualname__}('{self.title}')"

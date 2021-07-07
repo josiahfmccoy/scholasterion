@@ -1,7 +1,7 @@
 import os
 from flask import current_app
 from lxml import etree
-from db.services import DocumentService
+from ...db.services import DocumentService
 from ..languages.utils import serializable_language
 from ..utils import recursive_listdir
 

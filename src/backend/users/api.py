@@ -1,5 +1,5 @@
 from flask import request, session
-from db.services import UserService
+from ...db.services import UserService
 from .. import api
 from .auth import *
 from .utils import *

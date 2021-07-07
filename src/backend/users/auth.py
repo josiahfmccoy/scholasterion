@@ -4,7 +4,7 @@ import os
 from flask import request
 from functools import wraps
 from werkzeug.security import check_password_hash
-from db.services import UserService
+from ...db.services import UserService
 from .. import api
 
 __all__ = ['AuthManager', 'require_auth']

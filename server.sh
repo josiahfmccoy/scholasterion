@@ -1,1 +1,1 @@
-nohup pipenv run python run_webapp.py -p 5000 --expose > log.txt 2>&1 &
+nohup pipenv run python -m src.run_webapp -p 5000 --expose > log.txt 2>&1 &

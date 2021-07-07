@@ -1,4 +1,4 @@
-from src.parsing.loegion import norm_word
+from ...workbench.parsing.loegion import norm_word
 from ..services import LexemeService, LanguageService
 from .ancient_greek import CORE_VOCAB as grc_vocab
 

@@ -1,7 +1,7 @@
 import requests
 from flask import current_app
 from lxml import etree, html
-from db.services import LexemeService
+from ...db.services import LexemeService
 from ..languages.utils import serializable_language
 
 __all__ = [
@@ -65,7 +65,7 @@ def get_token(document, identifier):
 
 
 def parse_loegion(document, identifier):
-    from src.parsing.loegion import LoegionParser, norm_word
+    from ...workbench.parsing.loegion import LoegionParser, norm_word
     t = get_token(document, identifier)
 
     lang = document.collection.language
@@ -119,7 +119,7 @@ def parse_loegion(document, identifier):
 
 
 def gloss_loegion(lemma):
-    from src.glossing.loegion import LoegionGlosser
+    from ...workbench.glossing.loegion import LoegionGlosser
 
     gloss = LoegionGlosser().gloss(lemma)
     return gloss

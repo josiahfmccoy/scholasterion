@@ -11,7 +11,7 @@ def print_header(msg):
 def run_flask(name, runner, port, expose=False):
     print_header(f'Starting {name}')
 
-    webapp_command = f'pipenv run python {runner}.py -p {port}'
+    webapp_command = f'pipenv run python -m {runner} -p {port}'
     if expose:
         webapp_command += ' --expose'
 
@@ -25,7 +25,7 @@ def run_flask(name, runner, port, expose=False):
 
 def run_webapp():
     return run_flask(
-        'WebApp', 'run_webapp', os.getenv('APP_PORT', 5000),
+        'WebApp', 'src.run_webapp', os.getenv('APP_PORT', 5000),
         expose=os.getenv('EXPOSE_APP', False)
     )
 

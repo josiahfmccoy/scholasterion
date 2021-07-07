@@ -19,7 +19,7 @@ def create_app():
     @app.context_processor
     def inject_globals():
         return dict(
-            site_name='Σχολαστήριον',
+            site_name='Scholasterion',
             now=datetime.utcnow()
         )
 
@@ -53,7 +53,7 @@ def create_app():
 
     app.remove_static = remove_static
 
-    from db.data import load_defaults
+    from ..db.data import load_defaults
     load_defaults()
 
     from .literature.utils import load_texts

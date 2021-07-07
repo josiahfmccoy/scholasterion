@@ -1,4 +1,4 @@
-from db.services import CollectionService
+from ...db.services import CollectionService
 from .. import api
 from .utils import *
 

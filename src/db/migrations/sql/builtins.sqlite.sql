@@ -25,5 +25,9 @@ INSERT INTO document (
 (
     3, 'Dialogues', 'Lucian of Samosata', 1,
     'lucian-dialogues.zip'
+),
+(
+    4, 'Sayings of the Desert Fathers', 'Anonymous', 1,
+    'sayings-of-the-desert-fathers.zip'
 )
 ;

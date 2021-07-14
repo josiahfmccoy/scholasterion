@@ -16,7 +16,6 @@ token_words = sa.Table(
 
 class Token(Model):
     identifier = sa.Column(sa.Unicode(60), nullable=False)
-    form = sa.Column(sa.Unicode(), nullable=False)
     gloss = sa.Column(sa.Unicode(), nullable=True)
 
     document_id = sa.Column(
@@ -38,7 +37,8 @@ class Token(Model):
 
     def __repr__(self):
         return (
-            f"{self.__class__.__qualname__}('{self.form}')"
+            f"{self.__class__.__qualname__}"
+            f"('{self.document.title}', '{self.identifier}')"
         )
 
 

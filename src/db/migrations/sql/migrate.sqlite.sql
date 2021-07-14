@@ -40,35 +40,19 @@ CREATE TABLE word (
     FOREIGN KEY(lexeme_id) REFERENCES lexeme (id) 
 );
 
-CREATE TABLE collection (
-    long_title VARCHAR, 
+CREATE TABLE document (
     title VARCHAR(255) NOT NULL, 
     author VARCHAR, 
-    'order' INTEGER, 
     language_id INTEGER NOT NULL, 
-    parent_id INTEGER, 
+    file_url VARCHAR NOT NULL, 
     id INTEGER NOT NULL, 
     PRIMARY KEY (id), 
     FOREIGN KEY(language_id) REFERENCES language (id), 
-    FOREIGN KEY(parent_id) REFERENCES collection (id) 
-);
-
-CREATE TABLE document (
-    long_title VARCHAR, 
-    title VARCHAR(255) NOT NULL, 
-    author VARCHAR, 
-    'order' INTEGER NOT NULL, 
-    file_url VARCHAR NOT NULL, 
-    collection_id INTEGER NOT NULL, 
-    id INTEGER NOT NULL, 
-    PRIMARY KEY (id), 
-    FOREIGN KEY(collection_id) REFERENCES collection (id),  
     UNIQUE (file_url) 
 );
 
 CREATE TABLE token (
     identifier VARCHAR(80) NOT NULL, 
-    form VARCHAR NOT NULL, 
     gloss VARCHAR, 
     document_id INTEGER NOT NULL, 
     id INTEGER NOT NULL, 

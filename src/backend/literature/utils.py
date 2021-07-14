@@ -1,55 +1,57 @@
+import json
 import os
+import requests
+import shutil
+import tempfile
 from flask import current_app
 from lxml import etree
+from zipfile import ZipFile
 from ...db.services import DocumentService
 from ..languages.utils import serializable_language
-from ..utils import recursive_listdir
 
 __all__ = [
-    'serializable_document', 'serializable_collection',
-    'load_texts'
+    'serializable_document',
+    'load_texts',
+    'load_document_files'
 ]
 
 
-def serializable_document(document, with_collection=True):
+def serializable_document(document):
     if document is None:
         return None
     s = {
         'id': document.id,
-        'long_title': document.long_title,
         'title': document.title,
         'author': document.author,
-        'order': document.order,
+        'language': serializable_language(document.language),
         'file_url': document.file_url
     }
-    if with_collection:
-        s['collection'] = serializable_collection(document.collection)
     return s
 
 
-def serializable_collection(collection, with_parent=True, with_sections=True):
-    if collection is None:
-        return None
-    s = {
-        'id': collection.id,
-        'long_title': collection.long_title,
-        'title': collection.title,
-        'author': collection.author,
-        'order': collection.order,
-        'language': serializable_language(collection.language),
-        'documents': [
-            serializable_document(d, with_collection=False)
-            for d in sorted(collection.documents, key=lambda x: x.order)
-        ]
-    }
-    if with_sections:
-        s['sections'] = [
-            serializable_collection(c, with_parent=False)
-            for c in sorted(collection.sections, key=lambda x: x.order)
-        ]
-    if with_parent:
-        s['parent'] = serializable_collection(collection.parent, with_sections=False)
-    return s
+def load_document_files(file_url, filename=None):
+    if file_url.startswith('http'):
+        r = requests.get(file_url)
+        if not r.status_code == 200:
+            raise ValueError('Unable to load document contents')
+        content = r.content
+
+    else:
+        content = current_app.static_path(f'data/{file_url}')
+
+    with tempfile.TemporaryDirectory() as tempdir:
+        with ZipFile(content, 'r') as z:
+            z.extractall(tempdir)
+
+        if filename:
+            parser = etree.XMLParser(remove_blank_text=True)
+            xml_content = etree.parse(os.path.join(tempdir, filename), parser)
+            return etree.tostring(xml_content).decode('utf-8')
+
+        with open(os.path.join(tempdir, 'index.json'), 'r', encoding='utf-8') as f:
+            index = json.load(f)
+
+    return index
 
 
 def load_texts(app):
@@ -58,13 +60,15 @@ def load_texts(app):
         return
 
     app.remove_static('data')
+    data_dir = os.path.join(app.static_folder, 'data')
+    os.makedirs(data_dir)
 
-    files = [
-        os.path.relpath(x, start=text_folder).replace('\\', '/')
-        for x in recursive_listdir(text_folder)
-        if x.endswith('.xml')
+    folders = [
+        x.replace('\\', '/')
+        for x in os.listdir(text_folder)
+        if os.path.isdir(os.path.join(text_folder, x))
     ]
-    if not files:
+    if not folders:
         return
 
     db_docs = DocumentService.get_all()
@@ -73,31 +77,19 @@ def load_texts(app):
         fname = doc.file_url.replace('\\', '/')
         fname = fname.split('data/')[-1]
 
-        if fname not in files:
+        name = fname.rsplit('.', 1)[0]
+
+        if name not in folders:
             continue
 
-        add_document(
-            app=app, id=doc.id, filepath=os.path.join(text_folder, fname),
-            file_url=fname
-        )
+        print(f'Updating {fname} ...')
 
+        with tempfile.TemporaryDirectory() as tempdir:
+            zipfile = os.path.join(tempdir, name)
+            dirname = os.path.dirname(zipfile)
+            if not os.path.isdir(dirname):
+                os.makedirs(dirname)
 
-def add_document(*args, app=None, filepath=None, file_url=None, **kwargs):
-    doc = DocumentService.get_or_create(*args, **kwargs, no_commit=True)
-
-    if app is None:
-        app = current_app
-
-    if filepath:
-        fname = file_url or os.path.basename(filepath)
-        app.logger.debug(f'Updating {fname} ...')
-
-        parser = etree.XMLParser(remove_blank_text=True)
-        txt = etree.parse(filepath, parser)
-
-        with app.open_static(f'data/{fname}', 'wb') as f:
-            f.write(etree.tostring(txt, encoding='utf-8', pretty_print=True))
-
-        doc.file_url = fname
-
-    DocumentService.commit()
+            shutil.make_archive(zipfile, 'zip', os.path.join(text_folder, name))
+            zipfile += '.zip'
+            shutil.copy2(zipfile, data_dir)

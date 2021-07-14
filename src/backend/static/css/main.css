@@ -11,6 +11,11 @@
   src: url(./fonts/GentiumPlus-I.woff);
 }
 
+.word {
+    white-space: nowrap;
+    margin-right: .25em;
+}
+
 /*
 .lang-grc {
     font-family: SILGentiumPlus;

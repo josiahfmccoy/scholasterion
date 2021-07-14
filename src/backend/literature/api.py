@@ -1,4 +1,5 @@
-from ...db.services import CollectionService
+from flask import request
+from ...db.services import DocumentService
 from .. import api
 from .utils import *
 
@@ -6,39 +7,50 @@ from .utils import *
 literature_api = api.Blueprint('literature_api', __name__)
 
 
-@literature_api.route('/api/collection', methods=['GET'])
-def load_collections():
+@literature_api.route('/api/document', methods=['GET'])
+def load_documents():
     def sort_title(x):
         n = x.title.strip()
-        if n.startswith('A '):
-            n = n[2:]
-        elif n.startswith('The '):
-            n = n[4:]
+        for pref in ['A ', 'The ']:
+            if n.lower().startswith(pref.lower()):
+                n = n[len(pref):]
+                break
         # n = f'{n}|{x.language.iso_code}'
         return n
 
-    collections = sorted(
-        CollectionService.get_all(parent_id=None),
-        key=lambda x: sort_title(x)
+    documents = sorted(
+        DocumentService.get_all(), key=lambda x: sort_title(x)
     )
     return api.Result({
-        'collections': [serializable_collection(t) for t in collections]
+        'documents': [serializable_document(t) for t in documents]
     })
-
-
-@literature_api.route('/api/collection/<int:collection_id>', methods=['GET'])
-def load_collection(collection_id):
-    collection = CollectionService.get(collection_id)
-    if not collection:
-        raise api.Exception('Collection not found', 404)
-
-    return api.Result({'collection': serializable_collection(collection)})
 
 
 @literature_api.route('/api/document/<int:document_id>', methods=['GET'])
 def load_document(document_id):
-    document = CollectionService.Documents.get(document_id)
+    document = DocumentService.get(document_id)
     if not document:
         raise api.Exception('Document not found', 404)
 
     return api.Result({'document': serializable_document(document)})
+
+
+@literature_api.route(
+    '/api/document/<int:document_id>/content', methods=['GET']
+)
+def load_content(document_id):
+    document = DocumentService.get(document_id)
+    if not document:
+        raise api.Exception('Document not found', 404)
+
+    try:
+        return api.Result({
+            'content': load_document_files(
+                document.file_url,
+                filename=request.args.get('filename')
+            ),
+        })
+    except Exception:
+        import traceback
+        traceback.print_exc()
+        raise

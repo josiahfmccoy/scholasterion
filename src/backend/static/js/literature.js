@@ -25,8 +25,8 @@ const Reader = ((reader) => {
         frontDeskPage.hide();
 
         if (route.indexOf('reader') < 0) {
-            loadCollections().done((cols) => {
-                reader.showCollections(cols);
+            loadDocuments().done((docs) => {
+                reader.showDocuments(docs);
                 frontDeskPage.show();
                 loading.resolve();
             });
@@ -40,57 +40,65 @@ const Reader = ((reader) => {
         return loading.promise();
     }
 
-    const loadCollections = () => {
-        Loader.show('collections');
+    const loadDocuments = () => {
+        Loader.show('documents');
         const loading = $.Deferred();
 
         $.ajax({
-            url: '/api/collection',
+            url: '/api/document',
             type: 'GET',
             contentType: false,
             processData: false
         })
         .done((data, status, jqXHR) => {
-            loading.resolve(data.collections);
-            Loader.hide('collections');
+            loading.resolve(data.documents);
+            Loader.hide('documents');
         })
         .fail((jqXHR, status, error) => {
             loading.reject(jqXHR, status, error);
-            Loader.hide('collections');
+            Loader.hide('documents');
         });
 
         return loading.promise();
     };
-    reader.showCollections = (collections) => {
+    reader.showDocuments = (documents) => {
         const root = frontDeskPage.find('.card-body').empty();
 
-        const langSectionMap = {}
+        const langSectionMap = {};
+        const authorMap = {};
 
-        for (const col of collections) {
-            if (langSectionMap[col.language.id] === undefined) {
+        for (const doc of documents) {
+            if (langSectionMap[doc.language.id] === undefined) {
                 $('<h3 class="mb-2" />')
-                    .text(col.language.name + ' (' + col.language.iso_code + ')')
+                    .text(doc.language.name + ' (' + doc.language.iso_code + ')')
                     .appendTo(root);
-                langSectionMap[col.language.id] = $('<ul class="mb-3" />')
+                langSectionMap[doc.language.id] = $('<div class="mb-3" />')
                     .appendTo(root);
             }
 
-            const container = langSectionMap[col.language.id];
+            const container = langSectionMap[doc.language.id];
+
+            const authorKey = (doc.author || 'Anonymous') + '-' + doc.language.id;
+            if (authorMap[authorKey] === undefined) {
+                $('<h4 class="ms-2 mb-2" />')
+                    .text(doc.author || 'Anonymous')
+                    .appendTo(container);
+                authorMap[authorKey] = $('<ul class="ms-2 mb-2" />')
+                    .appendTo(container);
+            }
+
+            const subcontainer = authorMap[authorKey];
             const li = $('<li class="mb-1" />')
-                .appendTo(container);
+                .appendTo(subcontainer);
 
-            let title = col.title.replace(/\\n/g, ' ');
-            if (col.author) {
-                title += ' (' + col.author + ')'
-            }
+            let title = doc.title.replace(/\\n/g, ' ');
             $('<a />')
-                .attr('href', '/library/reader/' + col.id)
+                .attr('href', '/library/reader/' + doc.id)
                 .text(title)
                 .appendTo(li);
         }
     };
 
-    let currentCollection = {};
     let currentDocument = {}
 
     reader.load = () => {
@@ -99,11 +107,11 @@ const Reader = ((reader) => {
         const loading = $.Deferred();
 
         const i = route.indexOf('reader') + 1;
-        loadCollection(route[i])
-            .done((col) => {
-                reader.setCollection(col);
+        loadDocument(route[i])
+            .done((doc) => {
+                reader.setDocument(doc);
                 readingPage.show();
-                loading.resolve(col);
+                loading.resolve(doc);
             })
             .fail((jqXHR, status, error) => {
                 loading.reject(jqXHR, status, error);
@@ -112,159 +120,59 @@ const Reader = ((reader) => {
         return loading.promise();
     };
 
-    const processCollection = (col) => {
-        col = col || {};
-        col.documents = col.documents || [];
-        col.sections = col.sections || [];
-        col.children = col.documents.concat(col.sections)
-            .sort((a, b) => a.order - b.order);
-
-        col.htmlTitle = () => {
-            return (col.long_title || col.title)
-                .replace(/\\n/g, ' ')
-                .replace(/\n/g, ' ');
-        };
-
-        return col;
-    };
-
-    const loadCollection = (id) => {
+    const loadDocument = (id) => {
         const loading = $.Deferred();
-        if (currentCollection.id == id) {
-            return loading.resolve(currentCollection).promise();
+        if (currentDocument.id == id) {
+            return loading.resolve(currentDocument).promise();
         }
 
-        Loader.show('collection');
+        Loader.show('document');
 
         $.ajax({
-            url: '/api/collection/' + parseInt(id),
+            url: '/api/document/' + parseInt(id),
             type: 'GET',
             contentType: false,
             processData: false
         })
         .done((data, status, jqXHR) => {
-            loading.resolve(data.collection);
-            Loader.hide('collection');
+            loading.resolve(data.document);
+            Loader.hide('document');
         })
         .fail((jqXHR, status, error) => {
             loading.reject(jqXHR, status, error);
-            Loader.hide('collection');
+            Loader.hide('document');
         });
 
         return loading.promise();
     };
-    reader.setCollection = (col) => {
-        currentCollection = processCollection(col);
-
-        const route = Router.currentRoute();
-
-        let activeElement = currentCollection;
-        let hLevel = 1;
-        displayHeader(activeElement, hLevel);
-
-        const path = [];
-
-        let i = route.indexOf('reader') + 1;
-        while (i + 1 < route.length) {
-            const idx = route[i + 1];
-            const d = activeElement.children[idx - 1];
-            if (d === undefined) {
-                break;
-            }
-            path.push(idx);
-            activeElement = processCollection(d);
-            i++;
-            if (activeElement.file_url !== undefined) {
-                break;
-            }
-            hLevel++;
-            displayHeader(activeElement, hLevel);
-        }
-
-        if (activeElement.file_url !== undefined) {
-            return reader.setDocument(activeElement);
-        }
-        else {
-            displayToC(activeElement, path);
-            return $.Deferred().resolve().promise();
-        }
-    };
-
-    const displayHeader = (col, lvl) => {
-        const header = readingPage.find('#page-header');
-        const e = header.find('h' + lvl);
-        if (e.length) {
-            e.remove();
-        }
-
-        const h = $('<h' + lvl + ' />')
-            .html(col.long_title.replace(/\\n/g, '<br/>'))
-            .appendTo(header);
-
-        if (lvl == 1) {
-            h.addClass('text-center');
-            h.prependTo(header);
-        }
-    };
-
-    const displayToC = (col, path) => {
-        const page = readingPage.find('#page-body').empty();
-
-        const drawToC = (parent, vol, subPath, listStyle) => {
-            const ul = $('<ul />')
-                .appendTo(parent);
-            if (listStyle !== undefined) {
-                ul.css('list-style-type', listStyle);
-            }
-
-            for (let i = 0; i < vol.children.length; i++) {
-                const c = processCollection(vol.children[i]);
-                const li = $('<li class="mb-1" />').appendTo(ul);
-                $('<a />').text(c.htmlTitle())
-                    .attr({
-                        href: (
-                            '/library/reader/' + currentCollection.id
-                            + '/' + subPath + '/' + (i + 1)
-                        ).replace(/\/\//g, '/')
-                    })
-                    .appendTo(li);
-
-                if (c.children && c.children.length) {
-                    drawToC(li, c, subPath + '/' + (i + 1));
-                }
-            }
-        };
-
-        drawToC(page, col, path.join('/'), '"\\00A7\\0020"');
-    }
-
     reader.setDocument = (doc) => {
-        currentDocument = doc || {};
-        return loadContent(currentDocument.file_url)
-            .done((xml) => reader.setContent(xml));
+        currentDocument = doc;
+
+        return loadContent(currentDocument.id)
+            .done((content) => reader.setContent(content));
     };
 
-    const loadContent = (url) => {
+    const loadContent = (docId, filename) => {
         const loading = $.Deferred();
-        if (!url) {
-            return loading.resolve({}).promise();
-        }
 
-        if (url.indexOf('http') != 0) {
-            if (url.indexOf('/static/data') != 0) {
-                url = '/static/data/' + url;
-            }
-        }
         Loader.show('content');
 
+        const url = ['/api/document/' + parseInt(docId) + '/content'];
+        const args = [];
+        if (filename !== undefined) {
+            args.push('filename=' + encodeURIComponent(filename));
+        }
+        url.push(args.join('&') || '');
+        
+
         $.ajax({
-            url: url,
+            url: url.join('?'),
             type: 'GET',
             contentType: false,
             processData: false
         })
         .done((data, status, jqXHR) => {
-            loading.resolve(data.documentElement || {});
+            loading.resolve(data.content || {});
             Loader.hide('content');
         })
         .fail((jqXHR, status, error) => {
@@ -274,15 +182,64 @@ const Reader = ((reader) => {
 
         return loading.promise();
     };
-    reader.setContent = (xml) => {
+    reader.setContent = (content) => {
+        const route = Router.currentRoute();
+
         const page = readingPage.find('#page-body').empty();
 
-        if ($.isEmptyObject(xml)) {
+        if ($.isEmptyObject(content)) {
             return;
         }
-        $('<div class="lang-' + (currentCollection.language || {}).iso_code + '" />')
-            .html(xml.outerHTML || '')
-            .appendTo(page);
+
+        const searchParams = (new URL(window.location.href)).searchParams;
+        const sect = (searchParams.get('section') || '').split('/');
+
+        const findSection = (section, identifier) => {
+            if (!(identifier || '').trim()) {
+                return section;
+            }
+            for (let i = 0; i < section.sections.length; i++) {
+                const s = section.sections[i];
+                let check = s.title_page || s.table_of_contents || s.text;
+                if (check.indexOf('./') === 0) {
+                    check = check.slice(2);
+                }
+                if (check.indexOf(identifier) === 0) {
+                    return s
+                }
+            }
+            return null;
+        }
+
+        let currentSection = content;
+
+        for (let i = 0; i < sect.length; i++) {
+            if (currentSection.title_page !== undefined) {
+                const titlePage = $('<div />').appendTo(page);
+                loadContent(currentDocument.id, currentSection.title_page)
+                    .done((xml) => titlePage[0].outerHTML = xml);
+            }
+            currentSection = findSection(currentSection, sect.slice(0, i + 1).join('/'));
+            if (currentSection === null) {
+                return;
+            }
+        }
+        if (currentSection !== content && currentSection.title_page !== undefined) {
+            const titlePage = $('<div />').appendTo(page);
+            loadContent(currentDocument.id, currentSection.title_page)
+                .done((xml) => titlePage[0].outerHTML = xml);
+        }
+
+        if (currentSection.table_of_contents !== undefined) {
+            const toc = $('<div />').appendTo(page);
+            loadContent(currentDocument.id, currentSection.table_of_contents)
+                .done((xml) => toc[0].outerHTML = xml);
+        }
+        if (currentSection.text !== undefined) {
+            const txt = $('<div />').appendTo(page);
+            loadContent(currentDocument.id, currentSection.text)
+                .done((xml) => txt[0].outerHTML = xml);
+        }
     };
 
     const loadParsing = (vol_id, token_id) => {

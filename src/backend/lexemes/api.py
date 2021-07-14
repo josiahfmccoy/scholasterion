@@ -1,4 +1,4 @@
-from ...db.services import CollectionService, TokenService
+from ...db.services import DocumentService, TokenService
 from .. import api
 from .utils import *
 
@@ -8,7 +8,7 @@ lexeme_api = api.Blueprint('lexeme_api', __name__)
 
 @lexeme_api.route('/api/document/<int:document_id>/token/<string:token_id>', methods=['GET'])
 def get_token_info(document_id, token_id):
-    document = CollectionService.Documents.get(document_id)
+    document = DocumentService.get(document_id)
     if not document:
         raise api.Exception('Document not found', 404)
 
